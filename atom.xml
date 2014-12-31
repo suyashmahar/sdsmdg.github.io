@@ -4,7 +4,7 @@
  <title>Mobile Development Group Blog</title>
  <link href="http://sdsmdg.github.io/atom.xml" rel="self"/>
  <link href="http://sdsmdg.github.io/"/>
- <updated>2014-12-31T12:52:18+05:30</updated>
+ <updated>2014-12-31T13:44:12+05:30</updated>
  <id>http://sdsmdg.github.io</id>
  <author>
    <name>Mark Otto</name>
@@ -13,134 +13,53 @@
 
  
  <entry>
-   <title>Example content</title>
-   <link href="http://sdsmdg.github.io/2014/01/01/example-content/"/>
-   <updated>2014-01-01T00:00:00+05:30</updated>
-   <id>http://sdsmdg.github.io/2014/01/01/example-content</id>
-   <content type="html">&lt;div class='message'&gt;
-  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
-&lt;/div&gt;
-&lt;p&gt;Cum sociis natoque penatibus et magnis &lt;a href='#'&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;
+   <title>Introduction To Android Development</title>
+   <link href="http://sdsmdg.github.io/2014/12/31/introduction-to-android-development/"/>
+   <updated>2014-12-31T00:00:00+05:30</updated>
+   <id>http://sdsmdg.github.io/2014/12/31/introduction-to-android-development</id>
+   <content type="html">&lt;h1 id='introduction_to_android_development'&gt;Introduction To Android Development&lt;/h1&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h2 id='why_develop_for_android_'&gt;Why Develop For Android ?&lt;/h2&gt;
 
-&lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt;
+&lt;p&gt;With over 1 billion Android devices already activated, Android represents an incredible opportunity for developers.&lt;/p&gt;
 
-&lt;h2 id='inline_html_elements'&gt;Inline HTML elements&lt;/h2&gt;
+&lt;p&gt;As Android continues to grow beyond smartphones, it will become the brains behind invisible, ubiquitous cloud-connected computing. This is an introductory guide that will help you build awesome apps for smartphones and tablets today, and propel you towards exciting opportunities in Android&amp;#8217;s future.&lt;/p&gt;
 
-&lt;p&gt;HTML defines a long list of available inline tags, a complete list of which can be found on the &lt;a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element'&gt;Mozilla Developer Network&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id='resources'&gt;Resources&lt;/h2&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;To bold text&lt;/strong&gt;, use &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;p&gt;There are many resources online that can help you getting started. Here we are listing a few that will provide you an introduction to this exciting world :&lt;/p&gt;
 
-&lt;li&gt;&lt;em&gt;To italicize text&lt;/em&gt;, use &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-
-&lt;li&gt;Abbreviations, like &lt;abbr title='HyperText Markup Langage'&gt;HTML&lt;/abbr&gt; should use &lt;code&gt;&amp;lt;abbr&amp;gt;&lt;/code&gt;, with an optional &lt;code&gt;title&lt;/code&gt; attribute for the full phrase.&lt;/li&gt;
-
-&lt;li&gt;Citations, like &lt;cite&gt;&amp;mdash; Mark otto&lt;/cite&gt;, should use &lt;code&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-
-&lt;li /&gt;
-
-&lt;li&gt;Superscript &lt;sup&gt;text&lt;/sup&gt; uses &lt;code&gt;&amp;lt;sup&amp;gt;&lt;/code&gt; and subscript &lt;sub&gt;text&lt;/sub&gt; uses &lt;code&gt;&amp;lt;sub&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Most of these elements are styled by browsers with few modifications on our part.&lt;/p&gt;
-
-&lt;h2 id='heading'&gt;Heading&lt;/h2&gt;
-
-&lt;p&gt;Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.&lt;/p&gt;
-
-&lt;h3 id='code'&gt;Code&lt;/h3&gt;
-
-&lt;p&gt;Cum sociis natoque penatibus et magnis dis &lt;code&gt;code element&lt;/code&gt; montes, nascetur ridiculus mus.&lt;/p&gt;
-&lt;div&gt;
-  &lt;pre&gt;&lt;code class='js'&gt;// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function(&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;return a + b&amp;quot;);
-
-// Call the function
-adder(2, 6);
-// &amp;gt; 8&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.&lt;/p&gt;
-
-&lt;h3 id='lists'&gt;Lists&lt;/h3&gt;
-
-&lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;
+&lt;h3 id='video_tutorials'&gt;Video Tutorials&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&lt;/li&gt;
+&lt;li&gt;&lt;a href='https://www.udacity.com/course/ud853'&gt;Developing Android Apps&lt;/a&gt; - Created by Google and offered on Udacity, this course is a nice stepping stone if you have prior programming experience.&lt;/li&gt;
 
-&lt;li&gt;Donec id elit non mi porta gravida at eget metus.&lt;/li&gt;
+&lt;li&gt;&lt;a href='https://www.udacity.com/course/ud849'&gt;UX Design For Mobile&lt;/a&gt; - Another one by Google, this course will help you understand the most important and immediately useful techniques and approaches used by great mobile UX designers&lt;/li&gt;
 
-&lt;li&gt;Nulla vitae elit libero, a pharetra augue.&lt;/li&gt;
+&lt;li&gt;&lt;a href='https://www.youtube.com/user/androiddevelopers/featured'&gt;Android Developers Youtube Channel&lt;/a&gt; - Videos containing demos, tutorials, and anything else related to Android development.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.&lt;/p&gt;
+&lt;h3 id='documentation'&gt;Documentation&lt;/h3&gt;
 
-&lt;ol&gt;
-&lt;li&gt;Vestibulum id ligula porta felis euismod semper.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://developer.android.com/training/index.html'&gt;Official Android Developer Documentation&lt;/a&gt; - Highly recommended and something every android developer must refer to, weather a noob or a pro. Contains beginner level tutorials as well as referance of all classes for more advanced developers.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/li&gt;
+&lt;h3 id='blogs'&gt;Blogs&lt;/h3&gt;
 
-&lt;li&gt;Maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://www.vogella.com/tutorials/android.html'&gt;Vogella Android Tutorials&lt;/a&gt; - Short and precise tutorials about development for Android: tools installation, debugging and using various features.&lt;/li&gt;
 
-&lt;p&gt;Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.&lt;/p&gt;
-&lt;dl&gt;
-  &lt;dt&gt;HyperText Markup Language (HTML)&lt;/dt&gt;
-  &lt;dd&gt;The language used to describe and define the content of a Web page&lt;/dd&gt;
+&lt;li&gt;&lt;a href='http://www.androidhive.info/'&gt;Android Hive&lt;/a&gt; - Nice collection of tutorials, tips and hacks for android and game developers.&lt;/li&gt;
+&lt;/ul&gt;
 
-  &lt;dt&gt;Cascading Style Sheets (CSS)&lt;/dt&gt;
-  &lt;dd&gt;Used to describe the appearance of Web content&lt;/dd&gt;
+&lt;h3 id='question_answer_forum'&gt;Question Answer Forum&lt;/h3&gt;
 
-  &lt;dt&gt;JavaScript (JS)&lt;/dt&gt;
-  &lt;dd&gt;The programming language used to build advanced Web sites and applications&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;p&gt;Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://www.stackoverflow.com/'&gt;Stack Overflow&lt;/a&gt; - Q/A forum for programmers. Most probably you will find the answer to your problem here. If not&lt;/li&gt;
 
-&lt;h3 id='tables'&gt;Tables&lt;/h3&gt;
-
-&lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Name&lt;/th&gt;
-      &lt;th&gt;Upvotes&lt;/th&gt;
-      &lt;th&gt;Downvotes&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tfoot&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Totals&lt;/td&gt;
-      &lt;td&gt;21&lt;/td&gt;
-      &lt;td&gt;23&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tfoot&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Alice&lt;/td&gt;
-      &lt;td&gt;10&lt;/td&gt;
-      &lt;td&gt;11&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Bob&lt;/td&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt;3&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Charlie&lt;/td&gt;
-      &lt;td&gt;7&lt;/td&gt;
-      &lt;td&gt;9&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Want to see something else added? &lt;a href='https://github.com/poole/poole/issues/new'&gt;Open an issue.&lt;/a&gt;&lt;/p&gt;</content>
+&lt;li&gt;&lt;a href='https://www.google.com'&gt;There is always Google !&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
  </entry>
  
 
