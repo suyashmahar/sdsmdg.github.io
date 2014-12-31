@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Lanyon</title>
- <link href="http://lanyon.getpoole.com/atom.xml" rel="self"/>
- <link href="http://lanyon.getpoole.com/"/>
- <updated>2014-12-31T12:22:52+05:30</updated>
- <id>http://lanyon.getpoole.com</id>
+ <title>Mobile Development Group Blog</title>
+ <link href="http://sdsmdg.github.io/atom.xml" rel="self"/>
+ <link href="http://sdsmdg.github.io/"/>
+ <updated>2014-12-31T12:44:02+05:30</updated>
+ <id>http://sdsmdg.github.io</id>
  <author>
    <name>Mark Otto</name>
    <email>markdotto@gmail.com</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Example content</title>
-   <link href="http://lanyon.getpoole.com/2014/01/01/example-content/"/>
+   <link href="http://sdsmdg.github.io/2014/01/01/example-content/"/>
    <updated>2014-01-01T00:00:00+05:30</updated>
-   <id>http://lanyon.getpoole.com/2014/01/01/example-content</id>
+   <id>http://sdsmdg.github.io/2014/01/01/example-content</id>
    <content type="html">&lt;div class='message'&gt;
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 &lt;/div&gt;
