@@ -4,7 +4,7 @@
  <title>Mobile Development Group Blog</title>
  <link href="http://sdsmdg.github.io/atom.xml" rel="self"/>
  <link href="http://sdsmdg.github.io/"/>
- <updated>2014-12-31T13:44:12+05:30</updated>
+ <updated>2014-12-31T13:56:52+05:30</updated>
  <id>http://sdsmdg.github.io</id>
  <author>
    <name>Mark Otto</name>
@@ -17,9 +17,7 @@
    <link href="http://sdsmdg.github.io/2014/12/31/introduction-to-android-development/"/>
    <updated>2014-12-31T00:00:00+05:30</updated>
    <id>http://sdsmdg.github.io/2014/12/31/introduction-to-android-development</id>
-   <content type="html">&lt;h1 id='introduction_to_android_development'&gt;Introduction To Android Development&lt;/h1&gt;
-
-&lt;h2 id='why_develop_for_android_'&gt;Why Develop For Android ?&lt;/h2&gt;
+   <content type="html">&lt;h2 id='why_develop_for_android_'&gt;Why Develop For Android ?&lt;/h2&gt;
 
 &lt;p&gt;With over 1 billion Android devices already activated, Android represents an incredible opportunity for developers.&lt;/p&gt;
 
