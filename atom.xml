@@ -4,13 +4,67 @@
  <title>Mobile Development Group Blog</title>
  <link href="http://sdsmdg.github.io/atom.xml" rel="self"/>
  <link href="http://sdsmdg.github.io/"/>
- <updated>2014-12-31T13:56:52+05:30</updated>
+ <updated>2015-01-05T23:51:36+05:30</updated>
  <id>http://sdsmdg.github.io</id>
  <author>
    <name>Mark Otto</name>
    <email>markdotto@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Droid Wars</title>
+   <link href="http://sdsmdg.github.io/2015/01/02/droid-wars/"/>
+   <updated>2015-01-02T00:00:00+05:30</updated>
+   <id>http://sdsmdg.github.io/2015/01/02/droid-wars</id>
+   <content type="html">&lt;h2 id='problem_statement'&gt;Problem Statement&lt;/h2&gt;
+
+&lt;p&gt;With crime in Gotham continuously on the rise, Batman is worried that his Utility Belt may not be enough anymore. So he needs you to create a “Bat-App” for him that will help him in his endeavours. He needs to maintain a record of all the wrongdoers spreading havoc in his city. This app should have the following screens :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Home Screen&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This screen has 2 buttons - New record and View Records. Clicking on New record opens up a screen to create a new record and clicking on view existing records opens a list of records stored.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;New Record&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When the user clicks on the new record button he will be taken to a new screen which will have a form asking the user for various inputs like criminal&amp;#8217;s name , age , gender , crimes and last known/seen location. There will also be a button to save these records in a database..&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;View Records&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This screen will consist of a list of all the records stored locally. On clicking any item, the details of that particular criminal must be shown in the Details Screen&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Details&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Here&lt;/em&gt; is where the details of criminals that are stored in the database must be shown.&lt;/p&gt;
+
+&lt;h2 id='bonus_points_for'&gt;Bonus Points For&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Elegant User Interface&lt;/li&gt;
+
+&lt;li&gt;If images of each criminal are stored and displayed&lt;/li&gt;
+
+&lt;li&gt;Clicking on the last known location shows it on a map. You can take the latitude &amp;amp; longitude of the location from the user at the time of filling a new entry. A better option can be to just open the map, let the user pinpoint the location and save the latitude &amp;amp; longitude of that location. ( Refer Maps SDK for Android, Google Maps Android API v2 - Tutorial )&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='points_to_remember'&gt;Points to Remember&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Submit your entries latest by 20th January, 2015 to sdsmobilelabs@gmail.com. Your submission must include the zip file containing the source code and the apk file. Remember to write your name and contact information in the mail.&lt;/li&gt;
+
+&lt;li&gt;In case you run into some problem or don&amp;#8217;t know where to start, we have written a short blog that may help you.&lt;/li&gt;
+
+&lt;li&gt;Join our facebook group for further queries and updates.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
  
  <entry>
    <title>Introduction To Android Development</title>
