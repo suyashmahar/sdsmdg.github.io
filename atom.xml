@@ -4,7 +4,7 @@
  <title>Mobile Development Group Blog</title>
  <link href="http://sdsmdg.github.io/atom.xml" rel="self"/>
  <link href="http://sdsmdg.github.io/"/>
- <updated>2015-01-05T23:54:14+05:30</updated>
+ <updated>2015-01-06T00:25:51+05:30</updated>
  <id>http://sdsmdg.github.io</id>
  <author>
    <name>Mark Otto</name>
@@ -22,28 +22,22 @@
 &lt;p&gt;With crime in Gotham continuously on the rise, Batman is worried that his Utility Belt may not be enough anymore. So he needs you to create a “Bat-App” for him that will help him in his endeavours. He needs to maintain a record of all the wrongdoers spreading havoc in his city. This app should have the following screens :&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Home Screen&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Home Screen&lt;/strong&gt; This screen has 2 buttons - New record and View Records. Clicking on New record opens up a screen to create a new record and clicking on view existing records opens a list of records stored.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;New Record&lt;/strong&gt; When the user clicks on the new record button he will be taken to a new screen which will have a form asking the user for various inputs like criminal&amp;#8217;s name , age , gender , crimes and last known/seen location. There will also be a button to save these records in a database..&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;View Records&lt;/strong&gt; This screen will consist of a list of all the records stored locally. On clicking any item, the details of that particular criminal must be shown in the Details Screen&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Details&lt;/strong&gt; Here is where the details of criminals that are stored in the database must be shown.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;This screen has 2 buttons - New record and View Records. Clicking on New record opens up a screen to create a new record and clicking on view existing records opens a list of records stored.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;New Record&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;When the user clicks on the new record button he will be taken to a new screen which will have a form asking the user for various inputs like criminal&amp;#8217;s name , age , gender , crimes and last known/seen location. There will also be a button to save these records in a database..&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;View Records&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This screen will consist of a list of all the records stored locally. On clicking any item, the details of that particular criminal must be shown in the Details Screen&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Details&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;Here&lt;/em&gt; is where the details of criminals that are stored in the database must be shown.&lt;/p&gt;
 
 &lt;h2 id='bonus_points_for'&gt;Bonus Points For&lt;/h2&gt;
 
