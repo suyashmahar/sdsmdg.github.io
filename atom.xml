@@ -4,13 +4,153 @@
  <title>Mobile Development Group Blog</title>
  <link href="http://sdsmdg.github.io/atom.xml" rel="self"/>
  <link href="http://sdsmdg.github.io/"/>
- <updated>2015-01-06T20:52:07+05:30</updated>
+ <updated>2015-01-08T21:21:54+05:30</updated>
  <id>http://sdsmdg.github.io</id>
  <author>
    <name>Mark Otto</name>
    <email>markdotto@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Databases in Android</title>
+   <link href="http://sdsmdg.github.io/2015/01/08/databases-in-android/"/>
+   <updated>2015-01-08T00:00:00+05:30</updated>
+   <id>http://sdsmdg.github.io/2015/01/08/databases-in-android</id>
+   <content type="html">&lt;p&gt;All of you must be done with the first part of the challenge, that is, to complete the form which will be used to take the input data from the user. So now the question you might be thinking will be – how to store this data? Well, it seems there is one very efficient way to do this – Database.&lt;/p&gt;
+
+&lt;h2 id='what_is_a_database'&gt;What is a Database?&lt;/h2&gt;
+
+&lt;p&gt;With the increasing usability and complexity of the current applications, storing useful data has evolved from being an alternative to a necessity for developers. A database is a collection of information that is organized so that it can easily be accessed, managed, and updated. In computing, the most prevalent approach is the &lt;a href='https://www.google.co.in/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0CB8QFjAA&amp;amp;url=http://en.wikipedia.org/wiki/Relational_database&amp;amp;ei=3YCuVL6uM4OPuATViIKYAw&amp;amp;usg=AFQjCNEnTGY8PBHbHDpPw9B4YR6kdukcLg&amp;amp;sig2=vNAeN_Fy_rv0cunxXXJKMQ&amp;amp;bvm=bv.83339334,d.c2E'&gt;relational database&lt;/a&gt;, a tabular database in which data is defined so that it can be reorganized and accessed.&lt;/p&gt;
+
+&lt;h2 id='what_is_sqlite_'&gt;What is SQLite ?&lt;/h2&gt;
+
+&lt;p&gt;SQLite is an Open Source database. SQLite supports standard relational database features like SQL syntax, transactions and prepared statements. SQLite supports the data types &lt;strong&gt;TEXT&lt;/strong&gt; (similar to String in Java), &lt;strong&gt;INTEGER&lt;/strong&gt; (similar to long in Java) and &lt;strong&gt;REAL&lt;/strong&gt; (similar to double in Java). All other types must be converted into one of these fields before getting saved in the database.&lt;/p&gt;
+
+&lt;p&gt;(If you are not familiar with basic SQL syntax, a quick reference can be found &lt;a href='http://www.w3schools.com/sql/'&gt;here&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h2 id='sqlite_in_android'&gt;SQLite in Android&lt;/h2&gt;
+
+&lt;p&gt;SQLite is embedded into every Android device. Using an SQLite database in Android does not require a setup procedure or administration of the database. Access to an SQLite database involves accessing the file system. This can be slow. Therefore it is recommended to perform database operations asynchronously. If your application creates a database, this database is by default saved in the directory &lt;em&gt;DATA/data/APP_NAME/databases/FILENAME&lt;/em&gt;. The &lt;strong&gt;android.database&lt;/strong&gt; package contains all necessary classes for working with databases. The android.database.sqlite package contains the SQLite specific classes.&lt;/p&gt;
+
+&lt;h2 id='the_cursor_class'&gt;&lt;a href='http://developer.android.com/reference/android/database/Cursor.html'&gt;The Cursor Class&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;A query in android returns a Cursor object. A Cursor represents the result of a query and basically points to one row of the query result. This way Android can buffer the query results efficiently; as it does not have to load all data into memory.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;To get the number of elements of the resulting query use the &lt;strong&gt;getCount()&lt;/strong&gt; method.&lt;/li&gt;
+
+&lt;li&gt;To move between individual data rows, you can use the &lt;strong&gt;moveToFirst()&lt;/strong&gt; and &lt;strong&gt;moveToNext()&lt;/strong&gt; methods.&lt;/li&gt;
+
+&lt;li&gt;The &lt;strong&gt;isAfterLast()&lt;/strong&gt; method allows to check if the end of the query result has been reached.&lt;/li&gt;
+
+&lt;li&gt;A Cursor needs to be closed with the &lt;strong&gt;close()&lt;/strong&gt; method call. It is a good practice to close a cursor object once you have retrieved the values for that particular object inside your method.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='sqlitedatabase_class'&gt;&lt;a href='http://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html'&gt;SQLiteDatabase Class&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;SQLiteDatabase is the base class for working with a SQLite database in Android and provides methods to open, query, update and close the database. An object of this class is used to call methods like insert(), update() delete() rawQuery() query() etc. In addition it provides the execSQL() method, which allows to execute an SQL statement directly.&lt;/p&gt;
+
+&lt;h2 id='some_important_methods_of_sqlitedatabase_class_'&gt;Some important methods of SQLiteDatabase Class :&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#execSQL%28java.lang.String%29'&gt;execSQL()&lt;/a&gt; method:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This method takes an SQL query in the form of a String as parameter and executes it on the current database object. Syntax :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    databaseObject.execSQL(String SQLQuery);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#rawQuery%28java.lang.String,%20java.lang.String%5B%5D%29'&gt;rawQuery()&lt;/a&gt; method:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The rawQuery method takes an SQL query in it’s original syntax and a String array specifying the ‘Where’ parameters as input. All parameter places should be designated with &amp;#8217;?&amp;#8217;.This method runs the sql query and returns the selected rows in a Cursor object. The following gives the syntax of a rawQuery() call to fetch rows from a table &amp;#8216;books&amp;#8217; with given id:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    Cursor cursor = databaseObject.rawQuery(&amp;quot;SELECT * FROM books 
+WHERE id = ?&amp;quot;,new String[] { id });&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The following piece of code allows you to test whether the query returned an empty set and it moves the cursor to the first result (when the set is not empty). This code should be always added while executing rawQueries&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    if(cursor!=null)
+    {
+        cursor.moveToFirst();
+    }&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#query%28java.lang.String,%20java.lang.String%5B%5D,%20java.lang.String,%20java.lang.String%5B%5D,%20java.lang.String,%20java.lang.String,%20java.lang.String,%20java.lang.String%29'&gt;query()&lt;/a&gt; method:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This method is analogous to the rawQuery() method but requires a particular set of values to be passed as parameters. The following gives an example of a query() call. Query method is preferred as compared to rawQuery method as it protects you from SQL injections, builds the query for you and prevents having too many string concatenations.&lt;/p&gt;
+
+&lt;p&gt;An example of selecting a row with given id and title from the table &amp;#8216;books&amp;#8217; using query method :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    Cursor cursor = databaseObject.query(books, new String[] { KEY_ID, KEY_TITLE,  }, null, null, null, null, null);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id='the_contentvalues_class'&gt;&lt;a href='http://developer.android.com/reference/android/content/ContentValues.html'&gt;The ContentValues Class&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;The ContentValues class is used to store a set of values and is required for passing and receiving data variables of our table columns.&lt;/p&gt;
+
+&lt;p&gt;Syntax :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    ContentValues values = new ContentValues();
+    values.put(KEY_1, abc );
+    values.put(KEY_2, xyz); &lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id='implementation_in_android_app'&gt;&lt;strong&gt;IMPLEMENTATION IN ANDROID APP:&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;The first step towards creating and upgrading a database in your android app is to create a subclass of the SQLiteOpenHelper class. In the constructor of your subclass you call the super() method of SQLiteOpenHelper, specifying the database name and the current database version. Let us understand the procedure to create an Android database by creating a table books which stores title and author of a book as data along with an id assigned to each. In this class you need to override the following methods to create and update your database:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;onCreate()&lt;/strong&gt; - is called by the framework, if the database is accessed but not yet created. The basic purpose of this method is to create the table with the required data fields using the execSQL method.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;onUpgrade()&lt;/strong&gt; - called, if the database version is increased in your application code. This method allows you to update an existing database schema or to drop the existing database and recreate it via the onCreate() method.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now let&amp;#8217;s understand how to implement the methods with an example of a database containing a table storing information regarding books, namely title of the book and its author.&lt;/p&gt;
+
+&lt;h2 id='adding_a_book_'&gt;Adding a book :&lt;/h2&gt;
+
+&lt;p&gt;For adding a book we store the values of title and author in a ContentValues object and insert it using the insert method of SQLiteDatabase class.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    ContentValues values = new ContentValues();
+    values.put(&amp;quot;title&amp;quot;, String_Title); 
+    values.put(&amp;quot;author&amp;quot;, String_Author); &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;db.insert(TABLE_BOOKS, null, values);&lt;/p&gt;
+
+&lt;h2 id='fetching_a_book'&gt;Fetching a book:&lt;/h2&gt;
+
+&lt;p&gt;The rawQuery method of the SQLiteDatabase Class is invoked to select a book title with given id.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    Cursor cursor = db.rawQuery(&amp;quot;SELECT title, author FROM books 
+WHERE ID = ?&amp;quot;,new String[] { id });&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id='updating_a_book'&gt;Updating a book:&lt;/h2&gt;
+
+&lt;p&gt;We again use the rawQuery method with proper syntax to update our column values of a book with a given id.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    db.rawQuery(&amp;quot;UPDATE books SET title = ?, author = ?,
+WHERE id = ?,new String[] { title,author,id });&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id='deleting_a_book'&gt;Deleting a book:&lt;/h2&gt;
+
+&lt;p&gt;The delete method of SQLiteDatabase class is invoked to delete a book with the corresponding id.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    db.delete(TABLE_BOOKS, KEY_ID+&amp;quot; = ?&amp;quot;,  new String[] { BookId});&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This completes our discussion of databases and it&amp;#8217;s implementation in android applications. For more resources and detailed explanation you can always refer to the following links:&lt;/p&gt;
+
+&lt;p&gt;1) &lt;a href='http://www.vogella.com/tutorials/AndroidSQLite/article.html'&gt;Vogella&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;2) &lt;a href='http://developer.android.com/training/basics/data-storage/databases.html'&gt;Android Developers&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;3) &lt;a href='http://stackoverflow.com/questions/3037767/create-sqlite-database-in-android'&gt;StackOverflow&lt;/a&gt;&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Starting with the challenge</title>
