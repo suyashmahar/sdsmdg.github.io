@@ -4,7 +4,7 @@
  <title>Mobile Development Group Blog</title>
  <link href="http://sdsmdg.github.io/atom.xml" rel="self"/>
  <link href="http://sdsmdg.github.io/"/>
- <updated>2015-01-08T21:21:54+05:30</updated>
+ <updated>2015-01-08T21:29:06+05:30</updated>
  <id>http://sdsmdg.github.io</id>
  <author>
    <name>Mark Otto</name>
@@ -97,7 +97,7 @@ WHERE id = ?&amp;quot;,new String[] { id });&lt;/code&gt;&lt;/pre&gt;
     values.put(KEY_1, abc );
     values.put(KEY_2, xyz); &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id='implementation_in_android_app'&gt;&lt;strong&gt;IMPLEMENTATION IN ANDROID APP:&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id='implementation_in_android_app'&gt;Implementation in Android app&lt;/h2&gt;
 
 &lt;p&gt;The first step towards creating and upgrading a database in your android app is to create a subclass of the SQLiteOpenHelper class. In the constructor of your subclass you call the super() method of SQLiteOpenHelper, specifying the database name and the current database version. Let us understand the procedure to create an Android database by creating a table books which stores title and author of a book as data along with an id assigned to each. In this class you need to override the following methods to create and update your database:&lt;/p&gt;
 
@@ -113,31 +113,30 @@ WHERE id = ?&amp;quot;,new String[] { id });&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Now let&amp;#8217;s understand how to implement the methods with an example of a database containing a table storing information regarding books, namely title of the book and its author.&lt;/p&gt;
 
-&lt;h2 id='adding_a_book_'&gt;Adding a book :&lt;/h2&gt;
+&lt;h3 id='adding_a_book'&gt;Adding a book&lt;/h3&gt;
 
 &lt;p&gt;For adding a book we store the values of title and author in a ContentValues object and insert it using the insert method of SQLiteDatabase class.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;    ContentValues values = new ContentValues();
     values.put(&amp;quot;title&amp;quot;, String_Title); 
-    values.put(&amp;quot;author&amp;quot;, String_Author); &lt;/code&gt;&lt;/pre&gt;
+    values.put(&amp;quot;author&amp;quot;, String_Author); 
+    db.insert(TABLE_BOOKS, null,   values);&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;db.insert(TABLE_BOOKS, null, values);&lt;/p&gt;
-
-&lt;h2 id='fetching_a_book'&gt;Fetching a book:&lt;/h2&gt;
+&lt;h3 id='fetching_a_book'&gt;Fetching a book&lt;/h3&gt;
 
 &lt;p&gt;The rawQuery method of the SQLiteDatabase Class is invoked to select a book title with given id.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;    Cursor cursor = db.rawQuery(&amp;quot;SELECT title, author FROM books 
 WHERE ID = ?&amp;quot;,new String[] { id });&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id='updating_a_book'&gt;Updating a book:&lt;/h2&gt;
+&lt;h3 id='updating_a_book'&gt;Updating a book&lt;/h3&gt;
 
 &lt;p&gt;We again use the rawQuery method with proper syntax to update our column values of a book with a given id.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;    db.rawQuery(&amp;quot;UPDATE books SET title = ?, author = ?,
 WHERE id = ?,new String[] { title,author,id });&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id='deleting_a_book'&gt;Deleting a book:&lt;/h2&gt;
+&lt;h3 id='deleting_a_book'&gt;Deleting a book&lt;/h3&gt;
 
 &lt;p&gt;The delete method of SQLiteDatabase class is invoked to delete a book with the corresponding id.&lt;/p&gt;
 
