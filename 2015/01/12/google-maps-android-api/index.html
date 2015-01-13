@@ -122,7 +122,7 @@
 
 <h4 id='2_setting_up_google_play_services'>2. Setting Up Google Play Services</h4>
 
-<p>Once these packages have been installed, we must add the Google Play Services dependency to our projects build.gradle file. Open up the build.gradle file present within the module directory. Under the dependencies section add the latest version of the google-play-services library. At the time of writing, this is 6.1.71. You can find out the latest version number of the plugin, as well as many others <a href='http://gradleplease.appspot.com/'>here</a>.</p>
+<p>Once these packages have been installed, we must add the Google Play Services dependency to our projects build.gradle file. Open up the build.gradle file present within the module directory. Under the dependencies section add the latest version of the google-play-services library. At the time of writing, this is 6.1.71. You can find out the latest version number of the plugin, as well as many others <a href='http://gradleplease.appspot.com/'>here</a></p>
 
 <pre><code>dependencies {
     compile fileTree(dir: &#39;libs&#39;, include:[&#39;*.jar&#39;])
@@ -132,14 +132,10 @@
 <h4 id='3_creating_an_api_key_for_the_app'>3. Creating an API key for the app</h4>
 
 <ul>
-<li>Navigate to https://console.developers.google.com/project . Click on &#8220;Create Project&#8221;. Enter the project name and id of your choice.</li>
+<li>Navigate to <a href='https://console.developers.google.com/project'>https://console.developers.google.com/project</a>. Click on &#8220;Create Project&#8221;. Enter the project name and id of your choice.</li>
 </ul>
 
-<p><img alt='CreateProject' src='https://lh4.googleusercontent.com/QSNYokre-9cx3Aq5IvqcI65XRidKOavzhV5sdvJ-uzQ=s0' /></p>
-
-<ul>
-<li>Click on the &#8220;APIs &amp; auth&#8221; menu on the left, and from the submenu select APIs. From the list of APIs that appear, scroll down and ensure that Google Maps Android API v2 is set to “On”.</li>
-</ul>
+<p><img alt='CreateProject' src='https://lh4.googleusercontent.com/QSNYokre-9cx3Aq5IvqcI65XRidKOavzhV5sdvJ-uzQ=s0' /> - Click on the &#8220;APIs &amp; auth&#8221; menu on the left, and from the submenu select APIs. From the list of APIs that appear, scroll down and ensure that Google Maps Android API v2 is set to “On”.</p>
 
 <p><img alt='SetOnGoogleMapsAPIv2' src='https://lh4.googleusercontent.com/8_bob1D13HM-0M0achMCxxRLysbt3hzKz4QtFxkSgmI=s0' /></p>
 
@@ -147,28 +143,25 @@
 <li>Now under the same menu on the left, select “Credentials” . Under the Public API access heading, click &#8220;Create New Key&#8221;, and then &#8220;Android Key&#8221;.</li>
 </ul>
 
-<p><img alt='CreateNewKey' src='https://lh3.googleusercontent.com/4VGgwQH1LbPsKhLlERSDAan_9lzSX7f-ScQoxpvj4oM=s0' /></p>
-
-<ul>
-<li>Run the following command in your command prompt to generate your developer certificates SHA1 fingerprint key:</li>
-</ul>
+<p><img alt='CreateNewKey' src='https://lh3.googleusercontent.com/4VGgwQH1LbPsKhLlERSDAan_9lzSX7f-ScQoxpvj4oM=s0' /> - Run the following command in your command prompt to generate your developer certificates SHA1 fingerprint key:</p>
 
 <h5 id='for_windows_users'>For Windows Users</h5>
 
-<pre><code>	  keytool -list -v -keystore &quot;%USERPROFILE%\.android\debug.keystore&quot; -alias androiddebugkey -storepass android -keypass android</code></pre>
+<pre><code>    keytool -list -v -keystore &quot;%USERPROFILE%\.android\debug.keystore&quot; -alias androiddebugkey -storepass android -keypass android</code></pre>
 
 <h5 id='for_mac_os_or_linux_users'>For Mac OS or Linux Users</h5>
 
-<pre><code>    keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
-Take your SHA1 key, and append the apps package name to the end of it, separated by a semicolon. Paste this into the textbox and click Create. </code></pre>
+<pre><code>    keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android</code></pre>
 
-<p><img alt='AddSHA1Key' src='https://lh4.googleusercontent.com/QCob9rezyDVqRH1MrHGnq69oT3lVMUneWyO7wIobjEM=s0' /></p>
+<p>Take your SHA1 key, and append the apps package name to the end of it, separated by a semicolon. Paste this into the textbox and click Create.</p>
+
+<p><img alt='AddSHA1Key' src='https://lh5.googleusercontent.com/Kg3E1jIFPblpxs1zBTs7lVMfFac-cPYeFCPDGqjpGFo=s0' /></p>
 
 <ul>
 <li>You’ll see an API generated and displayed on the page. Copy the android api key to your clipboard.</li>
 </ul>
 
-<p><img alt='ReqAPIKey' src='https://lh3.googleusercontent.com/WxkvaqQ0cLEYRvNUG0-yEAT_bdjc9aqGW1W6pIwG0Mg=s0' /></p>
+<p><img alt='ReqAPIKey' src='https://lh4.googleusercontent.com/CK2PqCteAaUxNkGnnS7SFZ7xfZHrpsYxUbRVNFd-Vo8=s0' /></p>
 
 <h4 id='4_adding_the_api_key_in_our_app'>4. Adding the API key in our app</h4>
 
@@ -197,25 +190,25 @@ Take your SHA1 key, and append the apps package name to the end of it, separated
 
 <h2 id='google_maps_components'>Google Maps Components</h2>
 
-<h3 id='the_map_object'>The map object</h3>
+<h3 id='the_map_object'><a href='https://developers.google.com/maps/documentation/android/map'>The map object</a></h3>
 
 <p>The key class when working with a map object is the GoogleMap class. GoogleMap models the map object within your application. Within your UI, a map will be represented by either a MapFragment or MapView object.</p>
 
-<h3 id='mapfragment'>MapFragment</h3>
+<h3 id='mapfragment'><a href='https://developer.android.com/reference/com/google/android/gms/maps/MapFragment.html'>MapFragment</a></h3>
 
 <p>MapFragment, a subclass of the Android Fragment class, allows you to place a map in an Android fragment. MapFragment objects act as containers for the map, and provide access to the GoogleMap object.</p>
 
 <p>Unlike a View, a Fragment represents a behavior or a portion of user interface in an activity. Refer to the Android documentation on Fragments to learn more.</p>
 
-<h3 id='mapview'>Mapview</h3>
+<h3 id='mapview'><a href='http://developer.android.com/reference/com/google/android/gms/maps/MapView.html'>Mapview</a></h3>
 
 <p>MapView, a subclass of the Android View class, allows you to place a map in an Android View. Much like a MapFragment, the MapView acts as a container for the map, exposing core map functionality through the GoogleMap object.</p>
 
-<p>Users of this class must forward all the activity life cycle methods - such as onCreate(), onDestroy(), onResume(), and onPause() - to the corresponding methods in the MapView class.</p>
+<p>Users of this class must forward all the activity life cycle methods - such as <code>onCreate()</code>, <code>onDestroy()</code>, <code>onResume()</code>, and <code>onPause()</code> - to the corresponding methods in the MapView class.</p>
 
-<h3 id='marker'>Marker</h3>
+<h3 id='marker'><a href='https://developer.android.com/reference/com/google/android/gms/maps/model/Marker.html'>Marker</a></h3>
 
-<p>Markers identify locations on the map. The default marker uses a standard icon, common to the Google Maps look and feel. It&#8217;s possible to change the icon&#8217;s color, image or anchor point via the API. Markers are objects of type Marker, and are added to the map with the <code>googleMap.addMarker(markerOptions)</code> method.</p>
+<p>Markers identify locations on the map. The default marker uses a standard icon, common to the Google Maps look and feel. It&#8217;s possible to change the icon&#8217;s color, image or anchor point via the API. Markers are objects of type Marker, and are added to the map with the <a href='http://developer.android.com/reference/com/google/android/gms/maps/GoogleMap.html#addMarker(com.google.android.gms.maps.model.MarkerOptions'><code>googleMap.addMarker(markerOptions)</code></a>) method.</p>
 
 <h2 id='implementation_specifics'>Implementation Specifics</h2>
 
@@ -235,7 +228,7 @@ Take your SHA1 key, and append the apps package name to the end of it, separated
 
 <h3 id='initialising_the_map'>Initialising the Map</h3>
 
-<p>Declare a GoogleMap object.</p>
+<p>Declare a <a href='https://developer.android.com/reference/com/google/android/gms/maps/GoogleMap.html'>GoogleMap</a> object.</p>
 
 <pre><code>private GoogleMap googleMap ;</code></pre>
 
@@ -248,9 +241,9 @@ Take your SHA1 key, and append the apps package name to the end of it, separated
 
 <p>Remember to save the data for the clicked location. This also needs to be done in the OnCreate( ) method of the activity.</p>
 
-<pre><code>    googleMap.setOnMapClickListener(new OnMapClickListener() {
+<pre><code>googleMap.setOnMapClickListener(new OnMapClickListener() {
          @Override
-         public void onMapClick(LatLng latLng) {
+        public void onMapClick(LatLng latLng) {
 			 // add the code for saving the data 
 			 // and displaying a marker
         }
@@ -270,20 +263,20 @@ Take your SHA1 key, and append the apps package name to the end of it, separated
 <p>A map&#8217;s type governs the overall representation of the map. The Google Maps Android API offers four types of maps, as well as an option to have no map at all:</p>
 
 <ul>
-<li>Normal : Typical road map. Roads, some man-made features, and important natural features such as rivers are shown. Road and feature labels are also visible.</li>
+<li><strong>Normal</strong> : Typical road map. Roads, some man-made features, and important natural features such as rivers are shown. Road and feature labels are also visible.</li>
 
-<li>Hybrid : Satellite photograph data with road maps added. Road and feature labels are also visible.</li>
+<li><strong>Hybrid</strong> : Satellite photograph data with road maps added. Road and feature labels are also visible.</li>
 
-<li>Satellite : Satellite photograph data. Road and feature labels are not visible.</li>
+<li><strong>Satellite</strong> : Satellite photograph data. Road and feature labels are not visible.</li>
 
-<li>Terrain : Topographic data. The map includes colors, contour lines and labels, and perspective shading. Some roads and labels are also visible.</li>
+<li><strong>Terrain</strong> : Topographic data. The map includes colors, contour lines and labels, and perspective shading. Some roads and labels are also visible.</li>
 
-<li>None : No tiles. The map will be rendered as an empty grid with no tiles loaded.</li>
+<li><strong>None</strong> : No tiles. The map will be rendered as an empty grid with no tiles loaded.</li>
 </ul>
 
 <p><img alt='MapTypes' src='https://lh5.googleusercontent.com/3RcPnvhno5u3hNLdB3VUgMfMOq1FESP4ztLquP5bxdY=s0' /></p>
 
-<p>The map type can be changed by using the <code>googleMap.setMapType()</code> method. Here the <code>googleMap</code> is an instance of GoogleMap class.</p>
+<p>The map type can be changed by using the <a href='http://developer.android.com/reference/com/google/android/gms/maps/GoogleMap.html#setMapType(int'><code>googleMap.setMapType()</code></a>) method. Here the <code>googleMap</code> is an instance of GoogleMap class.</p>
 
 <pre><code>googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
