@@ -51,18 +51,18 @@
     
       
         
+      
+    
+      
+        
+      
+    
+      
+        
           <!--<a class="sidebar-nav-item" href="/about/">About</a>-->
         
       
     
-      
-    
-      
-        
-      
-    
-      
-        
       
     
       
@@ -96,29 +96,30 @@
         <div class="post">
   <h1 class="post-title">Adapters</h1>
   <span class="post-date">10 Jan 2015</span>
-  <h2 id='adapters_in_android'>Adapters in Android</h2>
+  <h2 id="adapters-in-android">Adapters in Android</h2>
 
 <p>An Adapter object acts as a bridge between an AdapterView and the underlying data for that view. The Adapter provides access to the data items. The Adapter is also responsible for making a View for each item in the data set.</p>
 
-<p>Regarding the challenge, we have to display the list of criminals. This can be done using ListView and ListFragment. We need an adapter to bind the data fetched from the database to corresponding row in the list. On clicking rows of listview, we need to show the details of the corresponding criminal. This can be done by adding <code>setOnClickListner()</code> to row item in the list.</p>
+<p>Regarding the challenge, we have to display the list of criminals. This can be done using ListView and ListFragment. We need an adapter to bind the data fetched from the database to corresponding row in the list. On clicking rows of listview, we need to show the  details of the corresponding criminal. This can be done by adding <code>setOnClickListner()</code> to row item in the list.</p>
 
-<h2 id='listfragment'>ListFragment</h2>
+<h2 id="listfragment">ListFragment</h2>
 
-<p><a href='http://developer.android.com/guide/components/fragments.html'>Fragment</a> is a piece of activity&#8217;s UI. We prefer to create the user interface using fragments and add these fragments to activity so that they can be reused. It&#8217;s lifecycle is similar to that of the activity.</p>
+<p><a href="http://developer.android.com/guide/components/fragments.html">Fragment</a> is a piece of activity’s UI. We prefer to create the user interface using fragments and add these fragments to activity so that they can be reused. It’s lifecycle is similar to that of the activity.</p>
 
-<p><a href='http://developer.android.com/reference/android/app/ListFragment.html'>ListFragment</a> displays a list of items by binding to a data source such as an array or Cursor, and exposes event handlers when the user selects an item.</p>
+<p><a href="http://developer.android.com/reference/android/app/ListFragment.html">ListFragment</a> displays a list of items by binding to a data source such as an array or Cursor, and exposes event handlers when the user selects an item.</p>
 
 <p>It hosts a ListView object that can be bound to different data sources, typically either an array or a Cursor holding query results.</p>
 
-<h3 id='how_do_we_add_fragment_to_activity'>How do we add Fragment to Activity?</h3>
+<h3 id="how-do-we-add-fragment-to-activity">How do we add Fragment to Activity?</h3>
 
-<p>The following snippet illustrates how do we add the fragment to activity. This should be done in the <code>onCreate</code> method of activity.</p>
+<p>The following snippet illustrates how do we add the fragment to activity. This should be done in the <code>onCreate</code>  method of activity.</p>
 
 <pre><code>fManager = getSupportFragmentManager();
 fTranslation = fManager.beginTransaction();
 exampleListFragment = new ExampleListFragment(); 	
 fTranslation.replace(R.id.list_fragment,exampleListFragment);
-fTranslation.commit();</code></pre>
+fTranslation.commit();
+</code></pre>
 
 <p>The exampleListFragment is declared as :</p>
 
@@ -148,81 +149,84 @@ list.setAdapter(new RowListAdapter(context, result));
 	return v;
  }
 
-}	</code></pre>
+}	
+</code></pre>
 
-<p><a href='http://developer.android.com/reference/android/widget/ListView.html'>ListView</a> is a <code>ViewGroup</code> which shows list of scrollable items. (<a href='http://developer.android.com/reference/android/view/ViewGroup.html'>ViewGroup</a> is a special view that can contain other views. The <code>ViewGroup</code> is the base class for layouts and views containers.)</p>
+<p><a href="http://developer.android.com/reference/android/widget/ListView.html">ListView</a> is a <code>ViewGroup</code> which shows list of scrollable items. (<a href="http://developer.android.com/reference/android/view/ViewGroup.html">ViewGroup</a> is a special view that can contain other views. The <code>ViewGroup</code> is the base class for layouts and views containers.)</p>
 
-<p><a href='https://www.airpair.com/android/list-fragment-android-studio'>Here</a> is quick tutorial on <code>ListFragment</code> using AndroidStudio.</p>
+<p><a href="https://www.airpair.com/android/list-fragment-android-studio">Here</a> is quick tutorial on <code>ListFragment</code> using AndroidStudio.</p>
+
 <hr />
-<h2 id='adapter'>Adapter</h2>
 
-<p><a href='http://developer.android.com/reference/android/widget/Adapter.html'>Adapter</a> in android acts as bridge between an <code>AdapterView</code> and the underlying data for that view. The Adapter provides access to the data items. The Adapter is also responsible for making a View for each item in the data set.</p>
+<h2 id="adapter">Adapter</h2>
 
-<p><img alt='enter image description here' src='http://www.edureka.co/blog/wp-content/uploads/2013/03/adapters-1.png' /></p>
+<p><a href="http://developer.android.com/reference/android/widget/Adapter.html">Adapter</a> in android acts as bridge  between an <code>AdapterView</code> and the underlying data for that view.  The Adapter provides access to the data items. The Adapter is also responsible for making a View for each item in the data set.</p>
 
-<p>Data can be information obtained from database or server or it can be already present in program. There are many subclasses of Adapter, for example <a href='http://developer.android.com/reference/android/widget/CursorAdapter.html'>CursorAdapter</a>, <a href='http://developer.android.com/reference/android/widget/ArrayAdapter.html'>ArrayAdapter</a> etc.</p>
+<p><img src="http://www.edureka.co/blog/wp-content/uploads/2013/03/adapters-1.png" alt="enter image description here" /></p>
 
-<h2 id='baseadapter'>BaseAdapter</h2>
+<p>Data can be information obtained from database or server  or it can be already present in program. There are many subclasses of Adapter, for example <a href="http://developer.android.com/reference/android/widget/CursorAdapter.html">CursorAdapter</a>, <a href="http://developer.android.com/reference/android/widget/ArrayAdapter.html">ArrayAdapter</a> etc.</p>
 
-<p><a href='http://developer.android.com/reference/android/widget/BaseAdapter.html'>BaseAdapter</a> is an abstract class which implements ListAdapter and SpinnerAdapter Interface. Hence, we may use it for implementing both <a href='http://developer.android.com/reference/android/widget/ListView.html'>ListView</a> and <a href='http://developer.android.com/guide/topics/ui/controls/spinner.html'>Spinner</a>. Following methods are necessary to implement for creating a subclass of BaseAdapter:</p>
-
-<ul>
-<li><code>getCount()</code> : <code>int</code> returns number of rows in list</li>
-
-<li><code>getItem(int position)</code>: <code>Object</code> returns Item object</li>
-
-<li><code>getItemId(int position)</code>: <code>long</code> returns the id of the item at position <code>position</code></li>
-
-<li><code>getView(int arg0, View arg1, ViewGroup arg2)</code>: <code>View</code></li>
-</ul>
-
-<h3 id='how_getview_works'>How getView() works?</h3>
-
-<p>Adapters call the <code>getView()</code> method which returns a view for each item within the adapter view. The layout format and the corresponding data for an item within the adapter view is set in the <code>getView()</code> method. Due to performance reasons, <code>getView()</code> doesn&#8217;t returns a new View object every time it is called. So what Android does is that it recycles the views and reuses the view that goes out of focus.</p>
-
-<p><img alt='Visual representation of this recycle process:' src='http://www.edureka.co/blog/wp-content/uploads/2013/03/021-1.png' /></p>
-
-<h2 id='cursoradapter'>CursorAdapter</h2>
-
-<p><a href='http://developer.android.com/reference/android/database/Cursor.html'>Cursor</a> is an interface which provides random read-write access to result set returned by read write query. This interface has been explained in our previous post on <a href='https://mobile.sdslabs.co/2015/01/08/databases-in-android/'>databases in android</a>.</p>
-
-<p><a href='http://developer.android.com/reference/android/widget/CursorAdapter.html'>CursorAdapter</a> is a subclass of BaseAdapter. It is used to bind cursor data qureied from database to AdapterView. Cursor adapter has following abstract methods,</p>
+<h2 id="baseadapter">BaseAdapter</h2>
+<p><a href="http://developer.android.com/reference/android/widget/BaseAdapter.html">BaseAdapter</a> is an abstract class which implements ListAdapter and SpinnerAdapter Interface. Hence, we may use it for implementing both <a href="http://developer.android.com/reference/android/widget/ListView.html">ListView</a> and <a href="http://developer.android.com/guide/topics/ui/controls/spinner.html">Spinner</a>. Following methods are necessary to implement for creating a subclass of BaseAdapter:</p>
 
 <ul>
-<li>
-<p><code>newView(Context context, Cursor cursor, ViewGroup parent)</code>: <code>View</code> This method creates new AdapterView to hold data.</p>
-</li>
-
-<li>
-<p><code>bindView(View view, Context context, Cursor cursor)</code>: <code>void</code> In this method CursorAdapter just elements to list&#8217;s view.</p>
-</li>
+  <li><code>getCount()</code> : <code>int</code> returns number of rows in list</li>
+  <li><code>getItem(int position)</code>: <code>Object</code> returns Item object</li>
+  <li><code>getItemId(int position)</code>: <code>long</code> returns the id of the item at position <code>position</code></li>
+  <li><code>getView(int arg0, View arg1, ViewGroup arg2)</code>: <code>View</code></li>
 </ul>
 
-<p><a href='http://developer.android.com/reference/android/widget/SimpleCursorAdapter.html'>SimpleCursorAdapter</a> is subclass of CursorAdapter. If we use it, we don&#8217;t have to create separate Adapter&#8217;s subclass. Here is a sample code that shows how do we attach this to listview.</p>
+<h3 id="how-getview-works">How getView() works?</h3>
+
+<p>Adapters call the <code>getView()</code> method which returns a view for each item within the adapter view. The layout format and the corresponding data for an item within the adapter view is set in the <code>getView()</code> method. Due to performance reasons, <code>getView()</code> doesn’t returns a new View object every time it is called. So what Android does is that it recycles the views and reuses the view that goes out of focus.</p>
+
+<p><img src="http://www.edureka.co/blog/wp-content/uploads/2013/03/021-1.png" alt="Visual representation of this recycle process:" /></p>
+
+<h2 id="cursoradapter">CursorAdapter</h2>
+
+<p><a href="http://developer.android.com/reference/android/database/Cursor.html">Cursor</a> is an interface which provides random read-write access to result set returned by read write query. This interface has been explained in our previous post on <a href="https://mobile.sdslabs.co/2015/01/08/databases-in-android/">databases in android</a>.</p>
+
+<p><a href="http://developer.android.com/reference/android/widget/CursorAdapter.html">CursorAdapter</a> is a subclass of BaseAdapter. It is used to bind cursor data qureied from database to AdapterView. Cursor adapter has following abstract methods,</p>
+
+<ul>
+  <li>
+    <p><code>newView(Context context, Cursor cursor, ViewGroup parent)</code>: <code>View</code> 
+ This method creates new AdapterView to hold data.</p>
+  </li>
+  <li>
+    <p><code>bindView(View view, Context context, Cursor cursor)</code>: <code>void</code> 
+ In this method CursorAdapter just elements to list’s view.</p>
+  </li>
+</ul>
+
+<p><a href="http://developer.android.com/reference/android/widget/SimpleCursorAdapter.html">SimpleCursorAdapter</a> is subclass of CursorAdapter. If we use it, we don’t have to create separate Adapter’s subclass. Here is a sample code that shows how do we attach this to listview.</p>
 
 <pre><code>    // The desired columns to be bound    
     String[] columns = new String[] { People.NAME, People.NUMBER };
 
     // XML defined views which the data will be bound to
     int[] to = new int[] { R.id.name_entry, R.id.number_entry };
-
+ 
     // Create the adapter using the cursor pointing to the desired data as well as the layout information
     SimpleCursorAdapter mAdapter = new SimpleCursorAdapter(this, R.layout.list_example_entry, cursor, columns, to);
 
-    // Set this adapter as your list&#39;s adapter
-    this.setListAdapter(mAdapter);</code></pre>
+    // Set this adapter as your list's adapter
+    this.setListAdapter(mAdapter);
+</code></pre>
 
-<h2 id='array_adapter'>Array Adapter</h2>
-
-<p><a href='http://developer.android.com/reference/android/widget/ArrayAdapter.html'>Array Adapter</a> is subclass of BaseAdapter. It is used to bind data in arrayList to AdapterView.</p>
+<h2 id="array-adapter">Array Adapter</h2>
+<p><a href="http://developer.android.com/reference/android/widget/ArrayAdapter.html">Array Adapter</a> is subclass of BaseAdapter. It is used to bind data in arrayList to AdapterView.</p>
 
 <p>In this type of adapter, we pass List, context of activity and layout of entry as attribute, but layout of entry can be only those which are already present in the library. We associate an adapter with View.</p>
-<hr />
-<h2 id='custom_adapters_for_listview'>Custom Adapters for ListView</h2>
 
-<p><a href='http://stackoverflow.com/questions/8166497/custom-adapter-for-list-view'>Custom Adapter</a> is used when we want to design and add more UI components to an item of ListView or GridView. We build this class on our own. This class extends Adapter or Adapter&#8217;s subclass. In the getView() method of class, we may set custom content View.</p>
-<center> <img height='500' src='http://i-cdn.phonearena.com/images/articles/126045-image/Androids-new-clothes.jpg' /> </center>
-<p><em>Image: ListView using CustomAdapter</em></p>
+<hr />
+
+<h2 id="custom-adapters-for-listview">Custom Adapters for ListView</h2>
+
+<p><a href="http://stackoverflow.com/questions/8166497/custom-adapter-for-list-view">Custom Adapter</a> is used when we want to design and add more UI components  to an item of ListView or GridView. We build this class on our own. This class extends Adapter or Adapter’s subclass.   In the getView() method of class, we may set custom content View.</p>
+
+<center> <img src="http://i-cdn.phonearena.com/images/articles/126045-image/Androids-new-clothes.jpg" height="500" /> </center>
+<p><em>Image:  ListView using CustomAdapter</em></p>
 
 <p>In general, CustomArrayAdapter overrides the following methods of ArrayAdapter,</p>
 
@@ -241,7 +245,8 @@ list.setAdapter(new RowListAdapter(context, result));
         //setOnClickListener events to button components
 
         return entryView;
-    }</code></pre>
+    }
+</code></pre>
 
 <p>Similarly, we can create CustomCursorAdapter by extending CursorAdapter. SubClass of CursorAdapter must have to override the following methods of CursorAdapter. Here is sample code for <code>newView()</code> and <code>bindView()</code> abstract methods of CursorAdapter.</p>
 
@@ -262,19 +267,30 @@ list.setAdapter(new RowListAdapter(context, result));
     {
         TextView txtView = (TextView)view.findViewById(android.R.id.text1);
         txtView.setText(cursor.getString(
-        cursor.getColumnIndex(&quot;person&quot;)));
-    }</code></pre>
+        cursor.getColumnIndex("person")));
+    }
+</code></pre>
 
-<p><a href='http://thinkandroid.wordpress.com/2010/01/11/custom-cursoradapters/'>Here</a> is a quick tutorial on CustomCursorAdapter.</p>
+<p><a href="http://thinkandroid.wordpress.com/2010/01/11/custom-cursoradapters/">Here</a> is a quick tutorial on CustomCursorAdapter.</p>
 
 <p>This concludes the post on adapters. Hope you will now be able to implement lists in your app.</p>
 
 <p>Keep watching for our next post on google maps. Till then goodbye and happy coding !</p>
+
 </div>
 
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2015/10/23/Installation/">
+            Installation
+            <small>23 Oct 2015</small>
+          </a>
+        </h3>
+      </li>
     
       <li>
         <h3>
@@ -290,15 +306,6 @@ list.setAdapter(new RowListAdapter(context, result));
           <a href="/2015/02/04/list-of-selected-candidates/">
             List of selected candidates for Mobile Development Group
             <small>04 Feb 2015</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/2015/01/12/google-maps-android-api/">
-            Google Maps Android API v2
-            <small>12 Jan 2015</small>
           </a>
         </h3>
       </li>
