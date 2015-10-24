@@ -51,18 +51,18 @@
     
       
         
-      
-    
-      
-        
-      
-    
-      
-        
           <!--<a class="sidebar-nav-item" href="/about/">About</a>-->
         
       
     
+      
+    
+      
+        
+      
+    
+      
+        
       
     
       
@@ -102,37 +102,37 @@
 
 <p>A <strong>theme</strong> is a style applied to an entire Activity or application.</p>
 
-<h2 id="resources">Resources</h2>
-<p>All the app resources such as static content like layouts, strings etc are placed in res/ directory.  res/values/ has XML files that contain simple values, such as strings, styles,  colors etc.</p>
+<h2 id='resources'>Resources</h2>
 
-<p>XML resource files in other res/ subdirectories define a single resource based on the XML filename whereas files in the values/ directory describe multiple resources.
-For a file in this directory, each child of the <code>&lt;resources&gt;</code> element defines a single resource. For example, a <code>&lt;string&gt;</code> element creates a R.string resource and a <code>&lt;color&gt;</code> element creates a R.color resource.</p>
+<p>All the app resources such as static content like layouts, strings etc are placed in res/ directory. res/values/ has XML files that contain simple values, such as strings, styles, colors etc.</p>
+
+<p>XML resource files in other res/ subdirectories define a single resource based on the XML filename whereas files in the values/ directory describe multiple resources. For a file in this directory, each child of the <code>&lt;resources&gt;</code> element defines a single resource. For example, a <code>&lt;string&gt;</code> element creates a R.string resource and a <code>&lt;color&gt;</code> element creates a R.color resource.</p>
 
 <p>All these resources are compiled and assigned an interger value in R.java file located at project/build/generated/source/r/debug/package/R.java or simply use ctrl+ N and type R.</p>
 
-<h2 id="alternative-resources">Alternative Resources</h2>
+<h2 id='alternative_resources'>Alternative Resources</h2>
+
 <p>You app runs on devices with different configuration.For example, to optimize the app for different screen sizes and densities you must provide alternative resources.Here is the way to do that:</p>
 
 <p>Create a new directory in res/ named in the form</p>
 
-<pre><code> &lt;resources_name&gt;-&lt;config_qualifier&gt;
-</code></pre>
+<pre><code> &lt;resources_name&gt;-&lt;config_qualifier&gt;</code></pre>
 
 <ul>
-  <li>
-    <p><code>&lt;resources_name&gt;</code> is the directory name of the corresponding default  resources.</p>
-  </li>
-  <li>
-    <p><code>&lt;qualifier&gt;</code> is a name that specifies an individual configuration for which these resources are to be used.</p>
-  </li>
+<li>
+<p><code>&lt;resources_name&gt;</code> is the directory name of the corresponding default resources.</p>
+</li>
+
+<li>
+<p><code>&lt;qualifier&gt;</code> is a name that specifies an individual configuration for which these resources are to be used.</p>
+</li>
 </ul>
 
-<p>For example: 
-   drawable/ and drawable-hdpi/ .The resource files must be named
-   exactly the same as the default resource files.</p>
+<p>For example: drawable/ and drawable-hdpi/ .The resource files must be named exactly the same as the default resource files.</p>
 
-<h2 id="accessing-resources">Accessing Resources</h2>
-<p>So how to access these resources in your project? Let’s have a look at this.</p>
+<h2 id='accessing_resources'>Accessing Resources</h2>
+
+<p>So how to access these resources in your project? Let&#8217;s have a look at this.</p>
 
 <p>When the application is compiled, aapt(Android Asset Packaging Tool) generates the R class, which contains resource IDs for all the resources in project’s res/ directory.</p>
 
@@ -141,47 +141,47 @@ For a file in this directory, each child of the <code>&lt;resources&gt;</code> e
 <p>A resource ID is always composed of:</p>
 
 <ul>
-  <li>The resource type</li>
-  <li>The resource name</li>
+<li>The resource type</li>
+
+<li>The resource name</li>
 </ul>
 
 <p><strong>There are two ways to access a resource:</strong></p>
 
-<p>1.Reference a resource in code:</p>
+<ol>
+<li>
+<p>Reference a resource in code:</p>
 
-<pre><code>[&amp;lt;package_name&amp;gt;.]R.&amp;lt;resource_type&amp;gt;.&amp;lt;resource_name&amp;gt;
-</code></pre>
+<p><span>&#60;package_name&#62;.</span>R.&#60;resource_type&#62;.&#60;resource_name&#62;</p>
+</li>
+</ol>
 
 <p>For example:</p>
 
 <pre><code>    // Load a background for the current screen from a drawable resource
 
-    getWindow().setBackgroundDrawableResource(R.drawable.background_image) ;
-</code></pre>
+    getWindow().setBackgroundDrawableResource(R.drawable.background_image) ;</code></pre>
 
 <p>drawable is the resource type and background_image is the resource name</p>
 
-<p>2.In xml</p>
+<ol>
+<li>
+<p>In xml</p>
 
-<pre><code>@[&amp;lt;package_name&amp;gt;:]&amp;lt;resource_type&amp;gt;/&amp;lt;resource_name&amp;gt;
-</code></pre>
+<p>@<span>&#60;package_name&#62;:</span>&#60;resource_type&#62;/&#60;resource_name&#62;</p>
+</li>
+</ol>
 
 <p>For example:</p>
 
 <pre><code>&lt;Button
  android:layout_width=”fill_parent”
  android:layout_height=”wrap_content”
- android:text=”@string/submit” /&gt;
-</code></pre>
+ android:text=”@string/submit” /&gt;</code></pre>
 
-<p><code>&lt;package_name&gt;</code> is the name of the package in which the resource is located (not required when referencing resources from your own package).
-<code>&lt;resource_type&gt;</code> is the R subclass for the resource type.
-<code>&lt;resource_name&gt;</code> is either the resource filename without the extension or the android:name attribute value in the XML element (for simple values).
-To reference a system resource, one would need to include the package name.
-For example:</p>
+<p><code>&lt;package_name&gt;</code> is the name of the package in which the resource is located (not required when referencing resources from your own package). <code>&lt;resource_type&gt;</code> is the R subclass for the resource type. <code>&lt;resource_name&gt;</code> is either the resource filename without the extension or the android:name attribute value in the XML element (for simple values). To reference a system resource, one would need to include the package name. For example:</p>
 
-<pre><code>android:textColor=”@android:color/secondary_text_dark”
-</code></pre>
+<pre><code>android:textColor=”@android:color/secondary_text_dark”</code></pre>
 
 <p><strong>Referencing style attributes</strong></p>
 
@@ -189,195 +189,179 @@ For example:</p>
 
 <p>Syntax:</p>
 
-<pre><code>?[&lt;package_name&gt;:][&lt;resource_type&gt;/]&lt;resource_name&gt;
-</code></pre>
+<pre><code>?[&lt;package_name&gt;:][&lt;resource_type&gt;/]&lt;resource_name&gt;</code></pre>
 
 <p>For Example:</p>
 
-<pre><code>   &lt;EditText id="text"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textColor="?android:textColorSecondary"
-        android:text="@string/hello_world" /&gt;
-</code></pre>
+<pre><code>   &lt;EditText id=&quot;text&quot;
+        android:layout_width=&quot;fill_parent&quot;
+        android:layout_height=&quot;wrap_content&quot;
+        android:textColor=&quot;?android:textColorSecondary&quot;
+        android:text=&quot;@string/hello_world&quot; /&gt;</code></pre>
 
 <p>Because the system resource tool knows that an attribute resource is expected in this context, we do not need to explicitly state the type (which would be ?android:attr/textColorSecondary) — we can exclude the attr type.</p>
 
 <p><strong>Accessing Platform Resources</strong></p>
 
-<p>Android contains a number of standard resources, such as styles, themes, and layouts.You need to add android package name to access these resources.
-For example:</p>
+<p>Android contains a number of standard resources, such as styles, themes, and layouts.You need to add android package name to access these resources. For example:</p>
 
-<pre><code>setListAdapter(new ArrayAdapter&lt;String&gt;(this, android.R.layout.simple_list_item_1, myarray));
-</code></pre>
+<pre><code>setListAdapter(new ArrayAdapter&lt;String&gt;(this, android.R.layout.simple_list_item_1, myarray));</code></pre>
 
 <p>simple_list_item_1 is a layout resource defined by the platform for items in a ListView.</p>
 
-<h2 id="styles">Styles</h2>
+<h2 id='styles'>Styles</h2>
+
 <p>Now we are all set to define styles.Here we go.</p>
 
 <p>To create a set of styles, save an XML file in the res/values/ directory of your project. The name of the XML file is arbitrary, but it must use the .xml extension and be saved in the res/values/ folder.</p>
 
 <p>The root node of the XML file must be <code>&lt;resources&gt;</code>.</p>
 
-<p>For each style you want to create, add a <code>&lt;style&gt;</code> element to the file with a name that uniquely identifies the style (this attribute is required). Then add an <code>&lt;item&gt;</code> element for each property of that style, with a name that declares the style property and a value to go with it (this attribute is required). The value for the <code>&lt;item&gt;</code> can be a keyword string, a hex color, a reference to another resource type, or other value depending on the style property. 
-For example:</p>
+<p>For each style you want to create, add a <code>&lt;style&gt;</code> element to the file with a name that uniquely identifies the style (this attribute is required). Then add an <code>&lt;item&gt;</code> element for each property of that style, with a name that declares the style property and a value to go with it (this attribute is required). The value for the <code>&lt;item&gt;</code> can be a keyword string, a hex color, a reference to another resource type, or other value depending on the style property. For example:</p>
 
-<pre><code>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;resources&gt;
-    &lt;style name="MyFontStyle" parent="@android:style/TextAppearance.Medium"&gt;
-        &lt;item name="android:layout_width"&gt;fill_parent&lt;/item&gt;
-        &lt;item name="android:layout_height"&gt;wrap_content&lt;/item&gt;
-        &lt;item name="android:textColor"&gt;#00FF00&lt;/item&gt;
-        &lt;item name="android:typeface"&gt;monospace&lt;/item&gt;
+    &lt;style name=&quot;MyFontStyle&quot; parent=&quot;@android:style/TextAppearance.Medium&quot;&gt;
+        &lt;item name=&quot;android:layout_width&quot;&gt;fill_parent&lt;/item&gt;
+        &lt;item name=&quot;android:layout_height&quot;&gt;wrap_content&lt;/item&gt;
+        &lt;item name=&quot;android:textColor&quot;&gt;#00FF00&lt;/item&gt;
+        &lt;item name=&quot;android:typeface&quot;&gt;monospace&lt;/item&gt;
     &lt;/style&gt;
-&lt;/resources&gt;
-</code></pre>
+&lt;/resources&gt;</code></pre>
 
 <p>Each child of the <code>&lt;resources&gt;</code> element is converted into an application resource object at compile-time, which can be referenced by the value in the <code>&lt;style&gt;</code> element’s name attribute. This example style can be referenced from an XML layout as @style/MyFontStyle.</p>
 
 <p>The parent attribute in the <code>&lt;style&gt;</code> element is optional and specifies the resource ID of another style from which this style should inherit properties.</p>
 
-<h2 id="inheritance">Inheritance</h2>
+<h2 id='inheritance'>Inheritance</h2>
 
 <p>The parent attribute in the <code>&lt;style&gt;</code> element lets you specify a style from which your style should inherit properties.</p>
 
 <p>1 .Inherit properties from an existing style</p>
 
-<pre><code>&lt;style name="GreenText" parent="@android:style/TextAppearance"&gt;
-        &lt;item name="android:textColor"&gt;#00FF00&lt;/item&gt;
-    &lt;/style&gt;
-</code></pre>
+<pre><code>&lt;style name=&quot;GreenText&quot; parent=&quot;@android:style/TextAppearance&quot;&gt;
+        &lt;item name=&quot;android:textColor&quot;&gt;#00FF00&lt;/item&gt;
+    &lt;/style&gt;</code></pre>
 
-<p>2.inherit from styles that you’ve created yourself</p>
-
-<pre><code>&lt;style name="MyFontStyle.Red"&gt;
-        &lt;item name="android:textColor"&gt;#FF0000&lt;/item&gt;
-    &lt;/style&gt;
-</code></pre>
+<ol>
+<li>
+<p>inherit from styles that you’ve created yourself</p>
+<style name='MyFontStyle.Red'>
+          <item name='android:textColor'>#FF0000</item>
+      </style></li>
+</ol>
 
 <p>You can continue inheriting like this as many times as you’d like, by chaining names with periods.This technique for inheritance by chaining together names only works for styles defined by your own resources.</p>
 
-<h2 id="style-properties">Style Properties</h2>
+<h2 id='style_properties'>Style Properties</h2>
 
 <p>For a reference of all available style properties, see the R.attr reference. Keep in mind that all View objects don’t accept all the same style attributes, so you should normally refer to the specific View class for supported style properties.</p>
 
-<h2 id="apply-a-theme">Apply a theme</h2>
+<h2 id='apply_a_theme'>Apply a theme</h2>
 
 <p>You can find this attribute in your AndroidManifest.xml file</p>
 
-<pre><code> &lt;application android:theme="@style/CustomTheme"&gt;
-</code></pre>
+<pre><code> &lt;application android:theme=&quot;@style/CustomTheme&quot;&gt;</code></pre>
 
 <p>If you want a theme applied to just one Activity in your application, then add the android:theme attribute to the<code>&lt;activity&gt;</code> tag instead.</p>
 
 <p>As of Android 5.0 (API 21) you can also assign the android:theme for a view. This allows to change the theme for this element and its child elements.</p>
 
-<h2 id="select-a-theme-based-on-platform-version">Select a theme based on platform version</h2>
-<p>To have a theme when the application is running on Android 3.0 (API Level 11) or higher, you can place an alternative declaration for the theme in an XML file in res/values-v11.Similarly for API Level 21 and above use res/values-v21.We’ll shortly see its great utility in maintaining compatibility.</p>
+<h2 id='select_a_theme_based_on_platform_version'>Select a theme based on platform version</h2>
+
+<p>To have a theme when the application is running on Android 3.0 (API Level 11) or higher, you can place an alternative declaration for the theme in an XML file in res/values-v11.Similarly for API Level 21 and above use res/values-v21.We&#8217;ll shortly see its great utility in maintaining compatibility.</p>
 
 <p>A list of the standard attributes that you can use in themes can be found at R.styleable.Theme.</p>
 
-<h2 id="using-platform-styles-and-themes">Using Platform Styles and Themes</h2>
+<h2 id='using_platform_styles_and_themes'>Using Platform Styles and Themes</h2>
+
 <p>The Android platform provides a large collection of styles and themes that you can use in your applications. You can find a reference of all available styles in the R.style class.</p>
 
 <p>For a better reference to the Android styles and themes, see the following source code:</p>
 
 <ul>
-  <li>Android Styles (styles.xml)</li>
-  <li>Android Themes (themes.xml)</li>
+<li>Android Styles (styles.xml)</li>
+
+<li>Android Themes (themes.xml)</li>
 </ul>
 
 <p>For a reference of available style attributes that you can use to define a style or theme (e.g., “windowBackground” or “textAppearance”), see R.attr or the respective View class for which you are creating a style.</p>
 
-<h2 id="styling-button">Styling Button</h2>
+<h2 id='styling_button'>Styling Button</h2>
+
 <p>You can style your button such that it will change appearance depending on its current state.</p>
 
-<p><strong>Custom background</strong>
-To achieve this your background should be a state list resource.</p>
+<p><strong>Custom background</strong> To achieve this your background should be a state list resource.</p>
 
 <p>You can define the state list in an XML file that defines three different images or colors to use for the different button states.</p>
 
 <p>Create a new XML file in the res/drawable/ directory (name it something like button_custom.xml). Insert the following XML:</p>
 
-<pre><code>&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;selector xmlns:android="http://schemas.android.com/apk/res/android"&gt;
-    &lt;item android:drawable="@drawable/button_pressed"
-          android:state_pressed="true" /&gt;
-    &lt;item android:drawable="@drawable/button_focused"
-          android:state_focused="true" /&gt;
-    &lt;item android:drawable="@drawable/button_default" /&gt;
-&lt;/selector&gt;
-</code></pre>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;
+    &lt;item android:drawable=&quot;@drawable/button_pressed&quot;
+          android:state_pressed=&quot;true&quot; /&gt;
+    &lt;item android:drawable=&quot;@drawable/button_focused&quot;
+          android:state_focused=&quot;true&quot; /&gt;
+    &lt;item android:drawable=&quot;@drawable/button_default&quot; /&gt;
+&lt;/selector&gt;</code></pre>
 
 <p>The order of the <code>&lt;item&gt;</code> elements is important.</p>
 
 <p>Now simply apply the drawable XML file as the button background:</p>
 
 <pre><code>&lt;Button
-    android:id="@+id/button"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/bSend"
-    android:onClick="sendMessage"
-    android:background="@drawable/button_custom"  /&gt;
-</code></pre>
+    android:id=&quot;@+id/button&quot;
+    android:layout_width=&quot;wrap_content&quot;
+    android:layout_height=&quot;wrap_content&quot;
+    android:text=&quot;@string/bSend&quot;
+    android:onClick=&quot;sendMessage&quot;
+    android:background=&quot;@drawable/button_custom&quot;  /&gt;</code></pre>
 
-<h2 id="maintaining-compatibility">Maintaining Compatibility</h2>
-<p>New themes are introduced which provides new features for apps running on higher API levels.So that means while making use of those features your app won’t run on older versions.Well that is not the case and android provides a nice workaround.</p>
+<h2 id='maintaining_compatibility'>Maintaining Compatibility</h2>
+
+<p>New themes are introduced which provides new features for apps running on higher API levels.So that means while making use of those features your app won&#8217;t run on older versions.Well that is not the case and android provides a nice workaround.</p>
 
 <ol>
-  <li>For example:
-You want to use material theme for API level 21 and above.Create a file themes.xml and put it under values folder.This will be used as default theme for lower API levels.</li>
+<li>For example: You want to use material theme for API level 21 and above.Create a file themes.xml and put it under values folder.This will be used as default theme for lower API levels.</li>
 </ol>
 
 <p>res/values/themes.xml:</p>
 
 <pre><code>&lt;resources&gt;
-    &lt;style name="MyTheme" parent="@android:style/Theme"&gt;
+    &lt;style name=&quot;MyTheme&quot; parent=&quot;@android:style/Theme&quot;&gt;
         &lt;!-- Any customizations for your app running on pre-5.0 devices here --&gt;
     &lt;/style&gt;
-&lt;/resources&gt;
-</code></pre>
+&lt;/resources&gt;</code></pre>
 
 <p>And make another file with similar name and put it under values-v21 folder.</p>
 
 <p>res/values-v21/themes.xml:</p>
 
 <pre><code>&lt;resources&gt;
-    &lt;style name="MyTheme" parent="@android:style/Theme.Material"&gt;
+    &lt;style name=&quot;MyTheme&quot; parent=&quot;@android:style/Theme.Material&quot;&gt;
         &lt;!-- Any customizations for your app running on devices with Theme.Material here --&gt;
     &lt;/style&gt;
-&lt;/resources&gt;
-</code></pre>
+&lt;/resources&gt;</code></pre>
 
 <p>Finally, in AndroidManifest.xml:</p>
 
-<pre><code>    &lt;application android:name="MyApplication"
-            android:label="@string/application_label"
-            android:icon="@drawable/app_icon"
-            android:hardwareAccelerated="true"
-            android:theme="@style/MyTheme"&gt;
-</code></pre>
+<pre><code>    &lt;application android:name=&quot;MyApplication&quot;
+            android:label=&quot;@string/application_label&quot;
+            android:icon=&quot;@drawable/app_icon&quot;
+            android:hardwareAccelerated=&quot;true&quot;
+            android:theme=&quot;@style/MyTheme&quot;&gt;</code></pre>
 
-<p>2.Use Support Library</p>
+<ol>
+<li>Use Support Library</li>
+</ol>
 
 <p>The Android Support Library package is a set of code libraries that provide backward-compatible versions of Android framework APIs as well as features that are only available through the library APIs. Each Support Library is backward-compatible to a specific Android API level.</p>
-
 </div>
 
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/2015/10/23/Installation/">
-            Installation
-            <small>23 Oct 2015</small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -393,6 +377,15 @@ You want to use material theme for API level 21 and above.Create a file themes.x
           <a href="/2015/01/12/google-maps-android-api/">
             Google Maps Android API v2
             <small>12 Jan 2015</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2015/01/10/adapters/">
+            Adapters
+            <small>10 Jan 2015</small>
           </a>
         </h3>
       </li>
