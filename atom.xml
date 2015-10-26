@@ -4,7 +4,7 @@
  <title>Mobile Development Group Blog</title>
  <link href="http://sdsmdg.github.io/atom.xml" rel="self"/>
  <link href="http://sdsmdg.github.io/"/>
- <updated>2015-10-26T22:50:06+05:30</updated>
+ <updated>2015-10-26T23:01:27+05:30</updated>
  <id>http://sdsmdg.github.io</id>
  <author>
    <name>Mark Otto</name>
@@ -106,6 +106,8 @@ After installing the JDK, you need to set the environment variable JAVA_HOME pat
 &lt;p&gt;• source /etc/environment&lt;/p&gt;
 
 &lt;p&gt;For reference one can &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-java-on-ubuntu-with-apt-get&quot;&gt;visit this link.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If there is still some error, one could also refer &lt;a href=&quot;http://www.wikihow.com/Install-Oracle-Java-JDK-on-Ubuntu-Linux&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;installing-ide-1&quot;&gt;&lt;strong&gt;Installing IDE&lt;/strong&gt;&lt;/h4&gt;
 &lt;ul&gt;
