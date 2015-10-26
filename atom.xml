@@ -4,7 +4,7 @@
  <title>Mobile Development Group Blog</title>
  <link href="http://sdsmdg.github.io/atom.xml" rel="self"/>
  <link href="http://sdsmdg.github.io/"/>
- <updated>2015-10-25T13:12:01+05:30</updated>
+ <updated>2015-10-26T22:50:06+05:30</updated>
  <id>http://sdsmdg.github.io</id>
  <author>
    <name>Mark Otto</name>
@@ -75,7 +75,7 @@ After installing the JDK, you need to set the environment variable JAVA_HOME pat
 
 &lt;h4 id=&quot;installing-ide&quot;&gt;&lt;strong&gt;Installing IDE&lt;/strong&gt;&lt;/h4&gt;
 &lt;hr /&gt;
-&lt;p&gt;• Go to &lt;a href=&quot;http://developer.android.com/sdk/index.html select&quot;&gt;this link&lt;/a&gt; and “Download Android Studio for Windows”.&lt;/p&gt;
+&lt;p&gt;• Go to &lt;a href=&quot;http://developer.android.com/sdk/index.html&quot;&gt;this link&lt;/a&gt; and select “Download Android Studio for Windows”.&lt;/p&gt;
 
 &lt;p&gt;• Check the “ I have read and agree with the above terms and conditions” box and Download Android Studio For Windows.&lt;/p&gt;
 
@@ -109,7 +109,7 @@ After installing the JDK, you need to set the environment variable JAVA_HOME pat
 
 &lt;h4 id=&quot;installing-ide-1&quot;&gt;&lt;strong&gt;Installing IDE&lt;/strong&gt;&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.android.com/intl/zh-cn/sdk/index.html&quot;&gt;https://developer.android.com/intl/zh-cn/sdk/index.html&lt;/a&gt;#Other select All Android Studio Packages - &amp;gt; Linux. This will start the download.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.android.com/sdk/index.html&quot;&gt;Follow this link&lt;/a&gt; -&amp;gt; select All Android Studio Packages -&amp;gt; Linux. This will start the download.&lt;/li&gt;
   &lt;li&gt;Extract the file. In terminal type  :
      cd /{Location where you extracted}/android-studio/bin
     sh studio.sh&lt;/li&gt;
@@ -125,7 +125,7 @@ After installing the JDK, you need to set the environment variable JAVA_HOME pat
 
 &lt;h3 id=&quot;some-common-errors&quot;&gt;&lt;strong&gt;Some Common errors:&lt;/strong&gt;&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;unable to access android sdk add-on list: &lt;br /&gt;
+  &lt;li&gt;unable to access android sdk add-on list:
 &lt;a href=&quot;http://stackoverflow.com/questions/29878370/android-studio-first-run-error&quot;&gt;http://stackoverflow.com/questions/29878370/android-studio-first-run-error&lt;/a&gt;
     &lt;ol&gt;
       &lt;li&gt;Turn off the firewall.&lt;/li&gt;
