@@ -4,7 +4,7 @@
  <title>Mobile Development Group Blog</title>
  <link href="http://sdsmdg.github.io/atom.xml" rel="self"/>
  <link href="http://sdsmdg.github.io/"/>
- <updated>2015-12-22T00:22:02+05:30</updated>
+ <updated>2015-12-22T00:39:30+05:30</updated>
  <id>http://sdsmdg.github.io</id>
  <author>
    <name>Mark Otto</name>
@@ -17,9 +17,8 @@
    <link href="http://sdsmdg.github.io/2015/12/22/TicTacToe/"/>
    <updated>2015-12-22T00:00:00+05:30</updated>
    <id>http://sdsmdg.github.io/2015/12/22/TicTacToe</id>
-   <content type="html">&lt;h3 id=&quot;problem-3&quot;&gt;&lt;strong&gt;Problem 3&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;##&lt;strong&gt;Tic-Tac-Toe&lt;/strong&gt;
-Everyone of you must have heard of the game Tic Tac Toe. Tic-tac-toe is a game for two players, X and O, who take turns marking the spaces in a 3x3 Grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game. Create an android app for the classic “Tic-Tac-Toe” game. Your app should consist of :&lt;/p&gt;
+   <content type="html">&lt;h3 id=&quot;tic-tac-toe&quot;&gt;&lt;strong&gt;Tic-Tac-Toe&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Everyone of you must have heard of the game Tic Tac Toe. Tic-tac-toe is a game for two players, X and O, who take turns marking the spaces in a 3x3 Grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game. Create an android app for the classic “Tic-Tac-Toe” game. Your app should consist of :&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Main Screen&lt;/strong&gt;: It should consist of two text fields, for containing names of players X-O and two buttons, “Play” and “View Highscores”. Clicking on “Play” opens up a screen containing the grid for playing tic-tac-toe and clicking on “View Highscores” opens a list of highscores.&lt;/li&gt;
@@ -44,9 +43,8 @@ Everyone of you must have heard of the game Tic Tac Toe. Tic-tac-toe is a game f
    <link href="http://sdsmdg.github.io/2015/12/22/StarWars/"/>
    <updated>2015-12-22T00:00:00+05:30</updated>
    <id>http://sdsmdg.github.io/2015/12/22/StarWars</id>
-   <content type="html">&lt;h3 id=&quot;problem-1&quot;&gt;&lt;strong&gt;Problem 1&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;##&lt;strong&gt;StarWars&lt;/strong&gt;
-A long time ago in a galaxy far far away, the Rebel Alliance managed to defeat the Galactic Empire and end the tyranny of Sith. The Jedi battled with and gained victory over the dark side and restored balance to the force. While the galaxy is busy in celebrations, the whereabouts of Skywalker - the last Jedi, are unknown. The Sith cease to survive, yet there are followers who are keen to re-establish the dark side. It is now time for you, to choose your side - the Light Side or the Dark Side of the force. You need to create an app, which serves to &lt;strong&gt;“Keep friends close, enemies closer !”&lt;/strong&gt;&lt;/p&gt;
+   <content type="html">&lt;h3 id=&quot;starwars&quot;&gt;&lt;strong&gt;StarWars&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;A long time ago in a galaxy far far away, the Rebel Alliance managed to defeat the Galactic Empire and end the tyranny of Sith. The Jedi battled with and gained victory over the dark side and restored balance to the force. While the galaxy is busy in celebrations, the whereabouts of Skywalker - the last Jedi, are unknown. The Sith cease to survive, yet there are followers who are keen to re-establish the dark side. It is now time for you, to choose your side - the Light Side or the Dark Side of the force. You need to create an app, which serves to &lt;strong&gt;“Keep friends close, enemies closer !”&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;The app, whichever side it serves, will have same functionality. It should be named &lt;strong&gt;“Resistance”&lt;/strong&gt;, symbolizing the affiliations with the Rebel Alliance (Light side) or &lt;strong&gt;“First Order”&lt;/strong&gt;, symbolizing the affiliations with the Empire (Dark Side). Your app should consist of :&lt;/p&gt;
 
@@ -79,8 +77,6 @@ A long time ago in a galaxy far far away, the Rebel Alliance managed to defeat t
   &lt;li&gt;Any other tweak or feature which adds to the utility of the app as per your creativity.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;points-to-remember&quot;&gt;&lt;strong&gt;Points to Remember&lt;/strong&gt;&lt;/h2&gt;
-
 </content>
  </entry>
  
@@ -89,9 +85,7 @@ A long time ago in a galaxy far far away, the Rebel Alliance managed to defeat t
    <link href="http://sdsmdg.github.io/2015/12/22/Droid-Wars/"/>
    <updated>2015-12-22T00:00:00+05:30</updated>
    <id>http://sdsmdg.github.io/2015/12/22/Droid-Wars</id>
-   <content type="html">&lt;h1 id=&quot;droid-wars&quot;&gt;&lt;strong&gt;Droid Wars&lt;/strong&gt;&lt;/h1&gt;
-
-&lt;p&gt;SDS MDG presents you &lt;strong&gt;Droid Wars&lt;/strong&gt; - An Application development Challenge which will act as a stage to represent your development skills and also as a chance for you to become a part of our team. It spans for the time period of around 20 days.&lt;/p&gt;
+   <content type="html">&lt;p&gt;SDS MDG presents you &lt;strong&gt;Droid Wars&lt;/strong&gt; - An Application development Challenge which will act as a stage to represent your development skills and also as a chance for you to become a part of our team. It spans for the time period of around 20 days.&lt;/p&gt;
 
 &lt;h2 id=&quot;instructions&quot;&gt;&lt;strong&gt;Instructions&lt;/strong&gt;&lt;/h2&gt;
 
@@ -116,8 +110,7 @@ A long time ago in a galaxy far far away, the Rebel Alliance managed to defeat t
    <link href="http://sdsmdg.github.io/2015/12/22/Car-Pooling/"/>
    <updated>2015-12-22T00:00:00+05:30</updated>
    <id>http://sdsmdg.github.io/2015/12/22/Car-Pooling</id>
-   <content type="html">&lt;h3 id=&quot;problem-2&quot;&gt;&lt;strong&gt;Problem 2&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;##&lt;strong&gt;Car Pooling&lt;/strong&gt;&lt;/p&gt;
+   <content type="html">&lt;h3 id=&quot;car-pooling&quot;&gt;&lt;strong&gt;Car Pooling&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;With the pollution in Delhi continuously on the rise, the metropolitan gears up to try odd-even strategy for vehicles to curb pollution from the coming year. Though the motive behind this is large and noble, but is bound to create confusions and anarchy. The residents of Delhi need a system which is efficient and ensures lesser confusion and serves the purpose. The Delhi government needs you to create &lt;strong&gt;“Hitch My Ride”&lt;/strong&gt;, which fits in the requirements the city needs. Your task is to create a prototype of this app, which the government will integrate with their servers and put it in action. The app will let the people hitch a ride with a car that has the same destination as theirs. The citizens just need to add a record of them going from one place to another along with their basic details, and someone who can ride along the way will contact them. Your app should have the following screens :&lt;/p&gt;
 
