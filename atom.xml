@@ -4,7 +4,7 @@
  <title>Mobile Development Group Blog</title>
  <link href="http://sdsmdg.github.io/atom.xml" rel="self"/>
  <link href="http://sdsmdg.github.io/"/>
- <updated>2015-12-21T23:50:23+05:30</updated>
+ <updated>2015-12-22T00:22:02+05:30</updated>
  <id>http://sdsmdg.github.io</id>
  <author>
    <name>Mark Otto</name>
@@ -98,9 +98,9 @@ A long time ago in a galaxy far far away, the Rebel Alliance managed to defeat t
 &lt;ul&gt;
   &lt;li&gt;There are 3 Application ideas out of which you must submit at least one complete application as mentioned in its description. The link to the above mentioned ideas are given below:
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://127.0.0.1:4000/2015/12/22/StarWars/&quot;&gt;“Star Wars”&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://127.0.0.1:4000/2015/12/22/Car-Pooling/&quot;&gt;“Car Pooling”&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://127.0.0.1:4000/2015/12/22/TicTacToe/&quot;&gt;“Tic-Tac-Toe” &lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://mobile.sdslabs.co/2015/12/22/StarWars/&quot;&gt;“Star Wars”&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://mobile.sdslabs.co/2015/12/22/Car-Pooling/&quot;&gt;“Car Pooling”&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://mobile.sdslabs.co/2015/12/22/TicTacToe/&quot;&gt;“Tic-Tac-Toe” &lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Submit your entries latest by 20th January, 2016 to &lt;strong&gt;“sdsmobilelabs@gmail.com”&lt;/strong&gt;. Your submission must include the zip file or the Github link of your project containing the source code and the apk file. Remember to write your name and contact information in the mail.&lt;/li&gt;
