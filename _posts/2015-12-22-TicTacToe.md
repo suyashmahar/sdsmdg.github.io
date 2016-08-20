@@ -3,8 +3,8 @@ layout: post
 title: Droid Wars - Problem 3
 tagline: Application development Challenge.
 visible: 0
-category: CSS
-tags: [css]
+category: Droid Wars
+tags: [recruitments]
 ---
 
 ### **Tic-Tac-Toe**

@@ -3,8 +3,8 @@ layout: post
 title: Recruitments 2015
 tagline: Recruitments 2015
 visible: 1
-category: CSS
-tags: [css]
+category: Droid Wars
+tags: [recruitments]
 ---
 
 List of selected candidates for Mobile Development Group

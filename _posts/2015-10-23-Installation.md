@@ -3,8 +3,8 @@ layout: post
 title: Installation
 tagline: Android Studio Installation.
 visible: 1
-category: CSS
-tags: [css]
+category: Introduction
+tags: [intro]
 ---
 
 ## Why Develop For Android?##

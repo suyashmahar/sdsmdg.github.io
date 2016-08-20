@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Introduction To Android Development
-category: CSS
-tags: [css]
+category: Introduction
+tags: [intro]
 ---
 
 ## Why Develop For Android ?

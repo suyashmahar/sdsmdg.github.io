@@ -3,8 +3,8 @@ layout: post
 title: Droid Wars
 tagline: Recruitment challenge for Mobile Development Group
 visible: 1
-category: CSS
-tags: [css]
+category: Droid Wars
+tags: [recruitments]
 ---
 
 ## Problem Statement

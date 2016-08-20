@@ -3,8 +3,8 @@ layout: post
 title: Adapters
 tagline: Using lists in android
 visible: 1
-category: CSS
-tags: [css]
+category: Adapters
+tags: [Android Adapter]
 ---
 
 ## Adapters in Android 
