@@ -11,7 +11,7 @@ name: Mobile Development Group # ex. DONGChuan
 email: sdsmdg@gmail.com
 location: Indian Institute of Technology, Roorkee # ex. Nice, France
 company: SDS Labs
-company_url: https://mobile.sdslabs.co/
+company_url: https://sdslabs.co/
 github_url: https://github.com/sdsmdg # ex. https://github.com/DONGChuan
 description: Jekyll powered web application for SDS Mobile Development Group, IIT Roorkee.
 favicon: favicon.png # Image must be in assets/images
