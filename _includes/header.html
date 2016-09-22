@@ -1,7 +1,12 @@
 <header class="site-header">
     <div class="container">
         <a id="site-header-brand" href="/" title="{{ site.name }}">
-            <span class="octicon octicon-mark-github"></span> {{ site.name }}
+            <!-- <span class="octicon octicon-mark-github"></span> {{ site.name }} -->
+            <span style="padding-right:3px; padding-top: 3px; display:inline-block;">
+
+            <img class="manImg" src="/assets/images/{{ site.favicon }}" height="60" width="60"></img>
+
+            </span> {{ site.name }}
         </a>
         <nav class="site-header-nav" role="navigation">
             {% for nav in site.navs %}
