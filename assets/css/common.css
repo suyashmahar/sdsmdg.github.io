@@ -10,14 +10,14 @@
     padding-bottom:20px;
     width: 100%;
     position: fixed;
-    margin: 40px 0 30px 0;
+/*    margin: 40px 0 30px 0;*/
     top: 0;
     left: 0 !important;
     right: 0;
     z-index: 103;
 
     color: #000;
-    background: #fff;
+    background: white;
 
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;

@@ -1,9 +1,9 @@
 ---
 layout: default
 menu: home
-css: ['index.css', 'sidebar-popular-repo.css']
+css: ['common.css', 'sidebar-popular-repo.css', 'blog-page.css']
 ---
-<section class="jumbotron">
+<section class="jumbotron" style="color:white; background:#4183c4;">
     <div class="container">
         <h1>{{ site.title }}</h1>
         <div id="jumbotron-meta-info">
@@ -13,11 +13,11 @@ css: ['index.css', 'sidebar-popular-repo.css']
             </span>
             <span class="meta-info hvr-grow">
                 <span class="octicon octicon-organization"></span>
-                <a href="{{ site.company_url }}" target="_blank">{{ site.company }}</a>
+                <a href="{{ site.company_url }}" target="_blank" style="color:white;">{{ site.company }}</a>
             </span>
             <span class="meta-info hvr-grow">
                 <span class="octicon octicon-mark-github"></span>
-                <a href="{{ site.github_url }}" target="_blank">@{{ site.name }}</a>
+                <a href="{{ site.github_url }}" target="_blank" style="color:white;">@{{ site.name }}</a>
             </span>
         </div>
     </div>
@@ -27,7 +27,7 @@ css: ['index.css', 'sidebar-popular-repo.css']
     <div class="row">
 
         <!-- Post List -->
-        <div class="col-md-8">
+        <!-- <div class="col-md-8">
 
             <ol class="post-list">
                 {% for post in paginator.posts %}
@@ -46,12 +46,35 @@ css: ['index.css', 'sidebar-popular-repo.css']
             </ol>
 
             <!-- Pagination -->
-            {% include pagination.html %}
+            <!-- {% include pagination.html %}
 
             <!-- Comments -->
-            {% include disqus-comments.html %}
+            <!-- {% include disqus-comments.html %}
 
-        </div>
+        </div>-->
+
+        <div class="col-md-8">
+
+        <!-- Blog list -->
+        <ul id="posts-list">
+            {% for post in site.posts %}
+            <li class="posts-list-item">
+                <div class="posts-content">
+                    <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+                    <a class="posts-list-name bubble-float-left" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                    <span class='circle'></span>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <!-- Pagination -->
+       <!-- {% include pagination.html %} -->
+
+        <!-- Comments -->
+        {% include disqus-comments.html %}
+
+    </div>
 
         <div class="col-md-4">
             {% include sidebar-popular-repo.html %}
