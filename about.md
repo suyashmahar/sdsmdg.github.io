@@ -8,7 +8,7 @@ subtitle:   <h3>We would be delighted to hear from you.</h3>
             </a>
             <a role="button" class="btn btn-primary hvr-grow-shadow" href="mailto:sdsmdg@gmail.com" target="_blank"><span class="si-mail"></span> Mail us!
             </a>
-            <a role="button" class="btn btn-primary hvr-grow-shadow" href="https://mdgchat.herokuapp.com/" target="_blank">
+            <a role="button" class="btn btn-primary hvr-grow-shadow" href="/chat" target="_blank">
                 Got a query, Ask us
             </a>
                             
