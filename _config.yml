@@ -58,15 +58,15 @@ paginate_path: 'page:num'
 navs:
   -
     href: /
-    label: Home
+    label: Blog
 
   # -
   #   href: /open-source
   #   label: Open-Source
 
-  -
-    href: /blog
-    label: Blog
+  #-
+   # href: /blog
+  #    label: Blog
 
   -
     href: /bookmark
