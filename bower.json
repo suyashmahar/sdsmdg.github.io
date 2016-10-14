@@ -1,15 +1,17 @@
 {
-  "name": "Yummy-Jekyll",
-  "description": "Jekyll Theme",
-  "main": "",
+  "name": "mdg_blog",
+  "description": "Jekyll powered blog for Mobile Development Group",
+  "main": "index.html",
   "keywords": [
+    "mdg",
+    "blog",
     "jekyll"
   ],
   "authors": [
     "DONG Chuan"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://mdg.sdslabs.co/",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -26,6 +28,7 @@
     "underscore": "^1.8.3",
     "primer-markdown": "^2.5.1",
     "flag-icon-css": "^2.3.1",
-    "76d-social-icons": "^1.0.4"
+    "76d-social-icons": "^1.0.4",
+    "components-font-awesome": "^4.6.3"
   }
 }
