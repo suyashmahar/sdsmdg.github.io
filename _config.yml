@@ -64,10 +64,6 @@ navs:
   #   href: /open-source
   #   label: Open-Source
 
-  #-
-   # href: /blog
-  #    label: Blog
-
   -
     href: /bookmark
     label: Bookmarks
@@ -75,6 +71,10 @@ navs:
   -
     href: /about
     label: About
+
+  -
+    href: /chat
+    label: Chat
 
 # Sidebar to show popular repo
 side_bar_repo_limit: 5 # Number of repos to show
