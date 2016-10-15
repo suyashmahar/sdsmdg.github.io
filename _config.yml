@@ -64,9 +64,9 @@ navs:
   #   href: /open-source
   #   label: Open-Source
 
-  -
-    href: /bookmark
-    label: Bookmarks
+  # -
+  #   href: /bookmark
+  #   label: Bookmarks
 
   -
     href: /about
