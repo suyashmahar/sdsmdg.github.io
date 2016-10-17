@@ -10,7 +10,7 @@ title: Where ideas meet reality!
 name: Mobile Development Group # ex. DONGChuan
 email: sdsmdg@gmail.com
 location: Indian Institute of Technology, Roorkee # ex. Nice, France
-company: SDS
+company: SDS Labs
 company_url: https://sdslabs.co/
 github_url: https://github.com/sdsmdg # ex. https://github.com/DONGChuan
 description: Jekyll powered web application for SDS Mobile Development Group, IIT Roorkee.
@@ -20,8 +20,8 @@ repository: sdsmdg/sdsmdg.github.io # ex. DONGChuan/DONGChuan.github.io
 # The base hostname & protocol for your site
 # For local test, please use http://localhost:4000
 # For production, use your github page url. ex. http://dongchuan.github.io
-# url: http://sdsmdg.github.io
-url: http://localhost:4000
+url: http://sdsmdg.github.io
+# url: http://localhost:4000
 
 ## Gem
 gems:
@@ -64,9 +64,9 @@ navs:
   #   href: /open-source
   #   label: Open-Source
 
-  # -
-  #   href: /bookmark
-  #   label: Bookmarks
+  -
+    href: /bookmark
+    label: Bookmarks
 
   -
     href: /about
