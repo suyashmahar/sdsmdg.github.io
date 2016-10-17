@@ -7,14 +7,14 @@ category: Android Studio Installation
 tags: [androidstudio,setup,installation]
 ---
 
-Hey! for Android app development, you first need a development environment for which you have two choices :
-**ANDROID STUDIO** based on Intellij IDEA platform recommended by Google and any other sane person for android development
-**ECLLIPSE** (Google officially declared it to be obsolete for android development).
+Hey there! For Android app development, you first need a development environment for which you have two choices :
 
-We will focus on Android Studio.
+- **ANDROID STUDIO** based on Intellij IDEA platform recommended by Google and any other sane person for android development
+- **ECLLIPSE** (Google officially declared it to be obsolete for android development).
 
+We will focus on _Android Studio_.
 
-----------
+-------------------------------
 
 
 System Requirements
@@ -23,7 +23,6 @@ System Requirements
 Building apps with **Android Studio** has following requirements:
 
 >**Windows:**
-
 > - Microsoft Windows 10/8/7/Vista (32- or 64-bit)
 > - 2 GB RAM minimum while 4 GB RAM is recommended (mostly for running emulator for android)
 > - 400 MB hard disk space
@@ -33,7 +32,6 @@ Building apps with **Android Studio** has following requirements:
 > - Optional for accelerated emulator(skip if you are a beginner): Intel® processor with support for Intel® VT-x, Intel® EM64T (Intel® 64), and Execute Disable (XD) Bit functionality
 
 >**Mac OS X:**
-
 > - Mac® OS X® 10.8.5 or higher, up to 10.9 (Mavericks)
 > - 2 GB RAM minimum, 4 GB RAM recommended (mostly for running emulator for android)
 > - 400 MB hard disk space
@@ -89,5 +87,4 @@ You can keep all default settings in the Installation wizard and once installati
 ![android sdk](https://lh3.googleusercontent.com/-FeeBvpav4eo/WAHP_ZJhciI/AAAAAAAADzM/KbnVOTqa_kY7GLcH2UduIGQqZvDO6HPbACLcB/s0/Screenshot+from+2016-10-05+17-11-48.png "sdk")
 
 
-If you face any problem you can contact us at
-[Chat](http://mdg.sdslabs.co/chat )
+*If you face any problem you can contact us at [Chat](http://mdg.sdslabs.co/chat)*
