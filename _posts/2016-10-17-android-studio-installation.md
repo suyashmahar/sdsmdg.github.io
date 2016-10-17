@@ -23,6 +23,7 @@ System Requirements
 Building apps with **Android Studio** has following requirements:
 
 >**Windows:**
+
 > - Microsoft Windows 10/8/7/Vista (32- or 64-bit)
 > - 2 GB RAM minimum while 4 GB RAM is recommended (mostly for running emulator for android)
 > - 400 MB hard disk space
@@ -32,6 +33,7 @@ Building apps with **Android Studio** has following requirements:
 > - Optional for accelerated emulator(skip if you are a beginner): Intel® processor with support for Intel® VT-x, Intel® EM64T (Intel® 64), and Execute Disable (XD) Bit functionality
 
 >**Mac OS X:**
+
 > - Mac® OS X® 10.8.5 or higher, up to 10.9 (Mavericks)
 > - 2 GB RAM minimum, 4 GB RAM recommended (mostly for running emulator for android)
 > - 400 MB hard disk space
