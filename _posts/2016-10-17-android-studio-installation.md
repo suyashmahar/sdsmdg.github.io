@@ -76,7 +76,7 @@ Click on New.. and give a random variable name, in variable value, paste the pat
 
 ![enter image description here](https://4.bp.blogspot.com/-Ld9O3cM65P8/UR-U0ENQYoI/AAAAAAAAAhw/z2I9qNF0-3g/s640/windows8_java_path_settings.JPG "final")
 
-You can ensure that your effort is valid by typing "javac- version"(without quotes) in command prompt. If you get a version, you have successfully set-up Java environment variable and you are good to go.
+You can ensure that your effort is valid by typing "javac -version"(without quotes) in command prompt. If you get a version, you have successfully set-up Java environment variable and you are good to go.
 
 
 #### <i class="icon-check"></i>Android Studio Installation
