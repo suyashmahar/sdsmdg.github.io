@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation Blog
+title: Android Studio Installation
 tagline: Android Studio 2.2 setup instructions
 visible: 1
 category: Android Studio Installation
