@@ -13,7 +13,7 @@ location: Indian Institute of Technology, Roorkee # ex. Nice, France
 company: SDS Labs
 company_url: https://sdslabs.co/
 github_url: https://github.com/sdsmdg # ex. https://github.com/DONGChuan
-description: Jekyll powered web application for SDS Mobile Development Group, IIT Roorkee.
+description: Mobile Development Group, SDS, IIT Roorkee is an active student group directing its efforts towards creating useful mobile applications and promoting tech based leaning for the same. The group is a part of Software Development Section which shares the same motto of promoting tech based activities.
 favicon: favicon.png # Image must be in assets/images
 repository: sdsmdg/sdsmdg.github.io # ex. DONGChuan/DONGChuan.github.io
 
