@@ -11,7 +11,7 @@
     "DONG Chuan"
   ],
   "license": "MIT",
-  "homepage": "https://mdg.sdslabs.co/",
+  "homepage": "http://127.0.0.1:4000/",
   "ignore": [
     "**/.*",
     "node_modules",
