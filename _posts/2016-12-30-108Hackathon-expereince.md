@@ -6,7 +6,8 @@ visible: 0
 category: Hackathons
 tags: [hackathons]
 date: 2016-12-30
-customlocaljs:
+customjs:
+ - /assets/js/gifAnimation.js
  - /assets/js/post/108Hackathon.js
 ---
 #  108 Emergency Services Hackathon Experience
