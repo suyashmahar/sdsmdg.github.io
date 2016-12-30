@@ -55,7 +55,9 @@ It used simple html, css and js and contained the following elements:
 * Graph showing no. of requests made in recent hours
 * Two pie charts showing city wise ratio of users and drivers.
 
-![Screenshots](/assets/images/posts_images/108hackathon/dashboard/1.png){: id="dashboard_gif" style="margin-left:0; margin-right:0;"}
+**To view dashboard [click here](https://dashboard108.herokuapp.com)**
+
+[![Screenshots](/assets/images/posts_images/108hackathon/dashboard/1.png){: id="dashboard_gif" style="margin-left:0; margin-right:0;"}](https://dashboard108.herokuapp.com)
 {: style="text-align:center;"}
 
 ### Languages used
