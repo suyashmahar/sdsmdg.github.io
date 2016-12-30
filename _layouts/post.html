@@ -3,6 +3,12 @@ layout: default
 css: ['sidebar-post-nav.css']
 ---
 {% include jumbotron.html %}
+{% for js in page.customjs %}
+<script async type="text/javascript" src="{{ js }}"></script>
+{% endfor %}
+{% for js in page.customlocaljs %}
+<script async type="text/javascript" src="{{ site.url }}{{ js }}"></script>
+{% endfor %}
 <article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
 
     <div class="row">
