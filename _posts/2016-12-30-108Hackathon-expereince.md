@@ -29,7 +29,7 @@ We made two android apps, one for the user requiring emergency and another for t
 ##### User App
 In this we implemented a 108 dial listener so that whenever the user dials 108, a service gets started in the background which fetches the location using inbuilt GPS and sends it to our sever via internet or sms (if no internet).
 Also it contained a one time signup screen for registering user details on our server.
-<div class="row" markdown="1">![Screenshots](/assets/images/posts_images/108hackathon/userapp_1/1.png){: id="userapp_gif_1" style=" width:250px; margin-left:0; margin-right:20px;"}![Screenshots](/assets/images/posts_images/108hackathon/108userapp2.gif){: id="userapp_gif_2" style=" width:250px; margin-right:0;"}
+<div class="row" markdown="1">![Screenshots](/assets/images/posts_images/108hackathon/userapp_1/1.png){: id="userapp_gif_1" style=" width:250px; margin-left:0; margin-right:20px;"}![Screenshots](/assets/images/posts_images/108hackathon/userapp_2/1.png){: id="userapp_gif_2" style=" width:250px; margin-right:0;"}
 {: style="text-align:center;"}
 </div>
 
@@ -37,16 +37,14 @@ Also it contained a one time signup screen for registering user details on our s
 It was based on [Node.js](https://nodejs.org/en/) and for database we choose [Firebase Realtime Database](https://firebase.google.com/docs/database/). It hosted both the api as well as the dashboard and was deployed online using heroku services.
 On the server after receiving a new request from the user's app, it searches through our database in the users city for the nearest ambulance driver using google's [Distance Matrix Api](https://developers.google.com/maps/documentation/distance-matrix/intro).
 Once the driver is found a sms is sent to the driver's mobile along with the info of the user requesting emergency. Meanwhile the user is also sent a sms containing the details about the driver and his ETA to reach him which is then parsed and automatically displayed on the user's app.
-![Screenshots](/assets/images/posts_images/108hackathon/108server.gif){: style="margin: 0 auto; display: block;"}
 
 
 
 ##### Driver App
 This app implemented a sms listener, which triggers on receiving any sms from our server. It then shows an activity containing a map with users location and other details. The driver can navigate through the location using google maps api.
 
-![Screenshots](/assets/images/posts_images/108hackathon/108driver.gif){: style="margin: 0 auto; display: block;"}
-
-![Screenshots](/assets/images/posts_images/108hackathon/108dashboard.png){: style=" float: none;" }
+![Screenshots](/assets/images/posts_images/108hackathon/driverapp/1.png){: id="driverapp_gif" style=" width:250px; margin-left:0; margin-right:0;"}
+{: style="text-align:center;"}
 
 ##### Dashboard
 It used simple html, css and js and contained the following elements:
@@ -56,7 +54,8 @@ It used simple html, css and js and contained the following elements:
 * Graph showing no. of requests made in recent hours
 * Two pie charts showing city wise ratio of users and drivers.
 
-**You can check our submission [here.](https://github.com/rahulbabbar1/108/)**
+![Screenshots](/assets/images/posts_images/108hackathon/dashboard/1.png){: id="dashboard_gif" style="margin-left:0; margin-right:0;"}
+{: style="text-align:center;"}
 
 ### Languages used
 * Java for Android
@@ -79,3 +78,6 @@ It used simple html, css and js and contained the following elements:
 ### What we got?
 
 We bagged 4th position in the Hackathon and **won a cash prize of Rs. 10,000** along with mementos and certificates of commendation. Along with these we had an amazing experience of working in a team for more than 24 hours straight.
+
+
+**You can check our submission [here.](https://github.com/rahulbabbar1/108/)**
