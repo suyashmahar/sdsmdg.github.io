@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+<link rel="icon" href="{{"/img/favicon.png" | prepend: site.baseurl }}">
 {% include head.html %}
 
-    <body>
+<body id="page-top">
+  {% include nav-blog.html %}
 
-    {% include header.html %}
+  {{ content }}
 
-        <div class="content">
-            {{ content }}
-        </div>
-
-    {% include footer.html %}
-
-    </body>
+  {% include contact.html %}
+  {% include scripts.html %}
+</body>
 
 </html>

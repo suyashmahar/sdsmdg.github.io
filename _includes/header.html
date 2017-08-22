@@ -1,22 +1,30 @@
-<header class="site-header">
-    <div class="container">
-        <a id="site-header-brand" href="/" title="{{ site.name }}">
-            <!-- <span class="octicon octicon-mark-github"></span> {{ site.name }} -->
-            <span style="padding-right:3px; padding-top: 3px; display:inline-block;">
-
-            <img class="manImg" src="/assets/images/{{ site.favicon }}" height="60" width="60"></img>
-
-            </span> {{ site.name }}
-        </a>
-        <nav class="site-header-nav" role="navigation">
-            {% for nav in site.navs %}
-            <a href="{{ nav.href }}"
-               class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item hvr-underline-from-center"
-               target="{{ nav.target | default: _self }}"
-               title="{{ nav.label }}">
-                {{ nav.label }}
-            </a>
-            {% endfor %}
-        </nav>
+<header>
+    <div class="container" >
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="header-content">
+                    <div class="header-content-inner">
+                        <h2 style="color: black">A place where</h2> 
+                        <h1 style="color: black"><b><i>Ideas meet reality!</i></b></h1>
+                        <a href="https://mdg.sdslabs.co/chat" class="btn btn-outline btn-xl page-scroll">Come chat with us!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="device-container">
+                    <div class="device-mockup galaxy_s3 portrait black">
+                        <div class="device">
+                            <div class="screen">
+                                <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                <img src="" class="img-responsive" alt="">
+                            </div>
+                            <div class="button">
+                                <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </header>

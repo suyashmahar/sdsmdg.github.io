@@ -1,87 +1,46 @@
-# Jekyll powered blog for Mobile Development Group
+#Mobile Development Group
+=========================
 
-## Install and setup
+## If you are a company and you're going to use the blog: 
+1. contact bootstrap start up and ask.
+2. contact me because there is to remove some useless part.
 
-Before using it, you may need [Bower](http://bower.io/) and [Bundler](http://bundler.io/) on your local to install dependencies.
+Jekyll theme based on [New Age bootstrap theme ](https://startbootstrap.com/template-overviews/new-age/)
 
-0. Install Ruby as described in this [Link](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-on-ubuntu-14-04-using-rvm).
-1. Fork code and clone
-2. Run `bower install` to install all dependencies in [bower.json](https://github.com/DONGChuan/DONGChuan.github.io/blob/master/bower.json)
-3. Run `bundle install` to install all dependencies in [Gemfile](https://github.com/DONGChuan/DONGChuan.github.io/blob/master/Gemfile)
-4. Update `_config.yml` with your own settings.
-5. Add posts in `/_posts`
-6. Commit to your own Username.github.io repository.
-7. Then come back to star this theme!
+# Demo
+View this jekyll theme in action [here](https://jekynewage.github.io/)
 
-> When install dependencies by bundler or gem, you may have some errors depending on your environment.
+## Built by
+[Antonio Trento](https://it.linkedin.com/in/antoniotrento)
 
-> Error about `json`. Check response of [Massimo Fazzolari on Stackoverflow](http://stackoverflow.com/questions/8100891/the-json-native-gem-requires-installed-build-tools) to quick fix your problem. (Please also use latest version instead of 1.9.3 mentioned in the response)
-  
-> Error about `jekyll-paginate`. Please check [here](http://stackoverflow.com/questions/35401566/dont-have-jekyll-paginate-or-one-of-its-dependencies-installed)
+This Jekyll template was created to develop, landing pages, squeeze pages, portfolio and blog or all the above.
 
-> Error about `SSL_connect`. Please check [here](http://stackoverflow.com/questions/15305350/gem-install-fails-with-openssl-failure) and [here](http://railsapps.github.io/openssl-certificate-verify-failed.html)
+###I integrated analytical tools and marketing such as:
+- Google Ad Words
+- Google analytics
+- Disqus comment system
+- Add This social sharing
 
-> For the moment, when you test on your local, you need to keep internet connection. Bug will be fixed soon.
+>>External stylesheets and libraries included are Google Fonts, Font Awesome, Normalize.CSS, and WOW.js
 
-## How to use
+In order to set your log data to applications _config.yml just open the file and find the associated items.
 
-#### Create a new post
+I also built a system to add their own names on the same company files
 
-Create a `.md` file inside `_posts` folder.
+**To change the base colors yellow go in css folder there main.css where you can set the primary color and the secondary color, remember that the theme is gradient in the background areas**
 
-Name the file according to the standard jekyll format.
 
-```
-2016-01-19-i-love-yummy.md
-```
+If you are interested in implementing this theme please contact me without any problems I will do what is in my power to help you!
 
-Write the Front Matter and content in the file.
+If you have noticed anything unusual or errors in my development I ask you kindly let me know or send a pull request!
 
-```
----
-layout: post
-title: Post title
-category: Category
-tags: [tag1, tag2]
----
-```
+Any opinion and critical comment is welcome! So give us inside!
 
-Please find examples [here](https://github.com/DONGChuan/DONGChuan.github.io/tree/master/_posts)
+We can get in touch by:
 
-#### [Post Navigation Module](http://dongchuan.github.io/css/2016/04/22/CSS-Animation.html)
+1. By <a href="https://twitter.com/lantoniotrento">twitter</a>
+2. mail <a href="mailto:lantoniotrento@gmail.com">lantoniotrento[at]gmail.com</a>
+3. Via <a href="https://it.linkedin.com/in/antoniotrento">LinkedIn</a>
 
-When writing post, please always follow this format:
-
-```
-Description about this post, blablabla
-
-## Title A
-
-### Title A-1
-
-### Title A-2
-
-## Title B
-
-### Title B-1
-
-```
-
-So, Title A, A-1, A-2, Title B, B-1 will be detected and created as a directory
-
-For example, [a demo post](https://github.com/DONGChuan/DONGChuan.github.io/edit/master/_posts/2016-04-22-CSS-Animation.md)
-
-But if you do not like it or your post is quite short. You want to hide this navigation to make your post occupy your full screen. You just need to set **no-post-nav:true** in the Front Matter of the post where you want to hide this feature :D
-
-#### [Github Module](http://dongchuan.github.io/open-source)
-
-This module will get automatically all your repository information from github. But to test on your local, you must keep internet connection. 
-In the future, it will also show the repositories you contributed a lot and the ones of your organization.
-
-#### [Bookmark Module](http://dongchuan.github.io/bookmark)
-
-To add new marks, you only need to edit [bookmark.md](https://github.com/DONGChuan/Yummy-Jekyll/blob/master/bookmark.md).
-
-#### [Customize About Page](http://dongchuan.github.io/about)
-
-Feel free to customize about.me page to show yourself. You only need to modify [about.md](https://github.com/DONGChuan/Yummy-Jekyll/blob/master/about.md) and [about.html](https://github.com/DONGChuan/Yummy-Jekyll/blob/master/_includes/about.html)
+=========
+For more details, read the [documentation](http://jekyllrb.com/)
