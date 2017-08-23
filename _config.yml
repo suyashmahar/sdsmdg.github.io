@@ -19,11 +19,10 @@ social:
   - title: facebook
     url: https://facebook.com/mdgiitr
   - title: google-plus
-    url: https://plus.google.com/sdsmdg
+    url: https://plus.google.com/sdsmobilelabs
   - title: github
     url: http://github.com/sdsmdg
-  - title: envelope
-    url: mailto:sdsmdg@gmail.com
+  
 
 # Build settings
 markdown: kramdown
