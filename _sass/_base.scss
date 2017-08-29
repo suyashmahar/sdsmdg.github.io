@@ -228,7 +228,7 @@ section {
     font-size: 50px;
   }
   &.download {
-    padding: 150px 0;
+    padding: 50px 0;
     position: relative;
     h2 {
       margin-top: 0;
@@ -245,6 +245,14 @@ section {
       }
     }
   }
+  &.group{
+    padding: 0;
+  }
+  &.meet{
+    .section-heading {
+      margin-bottom: 0;
+    }
+  }
   &.features {
     .section-heading {
       margin-bottom: 100px;
@@ -253,6 +261,16 @@ section {
       }
       p {
         margin-bottom: 0;
+      }
+    }
+    .badges .badge-link {
+      display: block;
+      margin-bottom: 25px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      img {
+        height: 60px;
       }
     }
     // section-post-heading fatto da Antonio
@@ -425,6 +443,12 @@ section {
     .device-container, .feature-item {
       max-width: none;
     }
+  }
+}
+@media (min-width: 768px) {
+  section.meet
+  {
+    margin-bottom: -200px;
   }
 }
 
