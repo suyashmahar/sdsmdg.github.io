@@ -56,7 +56,7 @@ After installing the JDK, you need to set the environment variable JAVA_HOME pat
     <img src="{{ "images/installation/environment_variables.png" | prepend: site.asset_add }}" alt="Environment Variables">
 </a> 
 
-3. The 'New System Variable' window will appear (see the figure below). Enter 'JAVA_HOME' as the variable name andC:\Program Files\Java\jdk1.8.0_25' as the variable value. Then click the 'OK' button.  
+3. The 'New System Variable' window will appear (see the figure below). Enter 'JAVA_HOME' as the variable name andC:\Program Files\Java\jdk1.8.0_144' as the variable value. Then click the 'OK' button.  
 <a href="{{ "images/installation/new_system_variable.png" | prepend: site.asset_add }}">
     <img src="{{ "images/installation/new_system_variable.png" | prepend: site.asset_add }}" alt="New System Variable">
 </a>
@@ -69,11 +69,12 @@ After installing the JDK, you need to set the environment variable JAVA_HOME pat
 
 5. Click anywhere in the 'Variable value' field and then press the End key on your PC. Then type the following into the field:
 ```
-  ;C:\Program Files\Java\jdk1.8.0_25\bin\
-```  
+  ;C:\Program Files\Java\jdk1.8.0_144\bin\
+``` 
+The completed screen will look something like this:   
 ![Edit system variable 2]({{ "images/installation/edit_system_variable2.png" | prepend: site.asset_add }})  
 
-> **NOTE:** Do not forget the semi-colon at the start - they are used to separate each path item from one another. The completed screen will look something like this: 
+> **NOTE:** Do not forget the semi-colon at the start - they are used to separate each path item from one another. 
 
 
 For reference, one can visit [this link](http://ridz1ba.blogspot.in/2015/01/how-to-install-oracle-java-and-andoid.html) 
@@ -93,7 +94,7 @@ For reference, one can visit [this link](http://ridz1ba.blogspot.in/2015/01/how-
     </a>
 </center>
 
-• Click on configure and chose SDK Manager in drop down menu.   
+• Click on configure and choose SDK Manager in drop down menu.   
 <center>
     <a href="{{ "images/installation/configure_linux.jpg" | prepend: site.asset_add }}">
         <img src="{{ "images/installation/configure_linux.jpg" | prepend: site.asset_add }}" alt="Configure">
@@ -141,7 +142,7 @@ source /etc/environment
 
 For reference you can [visit this link.](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-ubuntu-with-apt-get)
 
-If there is still some error, one could also refer [here](http://www.wikihow.com/Install-Oracle-Java-JDK-on-Ubuntu-Linux) 
+If there is still some error, you can also refer to [here](http://www.wikihow.com/Install-Oracle-Java-JDK-on-Ubuntu-Linux) 
 
 ******
 ### Installing IDE
@@ -194,3 +195,7 @@ sh studio.sh
 **Some basic links to grasp a bit of more knowledge:**  
 - [What is difference between JDK and JRE](http://stackoverflow.com/questions/1906445/what-is-the-difference-between-jdk-and-jre) - StackOverflow  
 - [What does Java home environment variables do?](http://stackoverflow.com/questions/5102022/what-does-the-java-home-environment-variable-do) - StackOverflow  
+
+---
+<br>
+For any queries feel free to [chat with us](http://mdg.sdslabs.co/chat) !
