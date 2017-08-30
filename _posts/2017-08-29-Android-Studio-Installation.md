@@ -86,18 +86,27 @@ For reference, one can visit [this link](http://ridz1ba.blogspot.in/2015/01/how-
 
 • Install studio after downloading.
 
-• Open the Android Studio. A window similar to the below one would appear. Select configure in it.
-<a href="{{ "/images/installation/newproject.jpg" | prepend: site.asset_add }}">
-    <img src="{{ "/images/installation/newproject.jpg" | prepend: site.asset_add }}" alt="New Project" style="width:100%;">
-</a>
+• Open the Android Studio. A window similar to the below one would appear.
+<center>
+    <a href="{{ "images/installation/configure.png" | prepend: site.asset_add }}">
+        <img src="{{ "images/installation/configure.png" | prepend: site.asset_add }}" alt="New Project" style="width:80%;">
+    </a>
+</center>
 
-• Click on the SDK Manager icon (containing android and a downward sign).![Configure]({{ "assets/images/installation/configure.jpg" | prepend: site.asset_add }})
+• Click on configure and chose SDK Manager in drop down menu.   
+<center>
+    <a href="{{ "images/installation/configure_linux.jpg" | prepend: site.asset_add }}">
+        <img src="{{ "images/installation/configure_linux.jpg" | prepend: site.asset_add }}" alt="Configure">
+    </a>
+</center>
 
+Install following packages
+<center>
+    <a href="{{ "images/installation/SDKTools.jpg" | prepend: site.asset_add }}">
+        <img src="{{ "images/installation/SDKTools.jpg" | prepend: site.asset_add }}" alt="Configure" style="width:100%;">
+    </a>
+</center>
 
-Install the following packages
-```shell
-SDK tools
-```
 
 ___
 
