@@ -61,21 +61,16 @@ After installing the JDK, you need to set the environment variable JAVA_HOME pat
     <img src="{{ "images/installation/new_system_variable.png" | prepend: site.asset_add }}" alt="New System Variable">
 </a>
 
-4. Scroll down the 'System variables' window until you see the 'Path' item, then click on it. Then click on the 'Edit...' button. The 'Edit System Variable' window will appear.  
-<a href="{{ "images/installation/edit_system_variable.png" | prepend: site.asset_add }}">
-    <img src="{{ "images/installation/edit_system_variable.png" | prepend: site.asset_add }}" alt="Edit System Variable">
-</a>
+4. Scroll down the 'System variables' window until you see the 'Path' item, then click on it. Then click on the 'Edit...' button. The 'Edit Environment Variable' window will appear. Click on the 'new' button then type the following into the field that gets highlighted:
 
-
-5. Click anywhere in the 'Variable value' field and then press the End key on your PC. Then type the following into the field:
 ```
-  ;C:\Program Files\Java\jdk1.8.0_144\bin\
+  C:\Program Files\Java\jdk1.8.0_144\bin\
 ``` 
-The completed screen will look something like this:   
-![Edit system variable 2]({{ "images/installation/edit_system_variable2.png" | prepend: site.asset_add }})  
+The completed screen will look something like this:
 
-> **NOTE:** Do not forget the semi-colon at the start - they are used to separate each path item from one another. 
-
+<a href="{{ "images/installation/edit_path_screeenshot.png" | prepend: site.asset_add }}">
+    <img src="{{ "images/installation/edit_path_screeenshot.png" | prepend: site.asset_add }}" alt="Edit Environment Variable">
+</a>
 
 For reference, one can visit [this link](http://ridz1ba.blogspot.in/2015/01/how-to-install-oracle-java-and-andoid.html) 
 
